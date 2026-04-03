@@ -58,3 +58,64 @@
 > 💬 **让模组管理回归简单——您只负责游戏，剩下的交给管理器。**
 
 *—— 作者：ckcc_baize*
+
+# 🎮 STS2 Mod Manager Introduction
+
+> An all-in-one tool designed for game mod management and save file maintenance, covering the entire workflow from mod installation and compliance checking to save management and online fix injection. Simply configure your game executable path and Nexus Mods API key, and enjoy a highly automated mod lifecycle management experience.
+
+---
+
+## ✨ Core Features Overview
+
+### I. 📦 Mod Management
+
+- 🔍 **Compliance Check**: Automatically verifies whether the mod's file structure, format, and content meet the required specifications, preventing game crashes caused by faulty mods.
+- 🔗 **Dependency Check**: Parses the dependency tree between mods; if a required mod is missing, it provides clear prompts to ensure proper mod loading.
+- 🏷️ **Tag-based Activation & Presets**: Supports custom tags for mods (e.g., "Gameplay Expansion", "Graphics Overhaul") and allows saving them as presets for one‑click switching between different mod configurations.
+
+### II. 💾 Save Management
+
+- 📋 **Save Details View**: Displays metadata such as creation time, game progress, character information, etc.
+- 🔄 **Import / Export / Overwrite**: Supports backup, migration, and replacement of save files, making it easy to sync across devices or roll back progress.
+
+### III. 🌐 Nexus Mods Deep Integration
+
+- ⚡ **One‑Click Download & Install**: Through the companion web plugin, you can trigger downloads directly from Nexus Mods pages and automatically install them into the manager.
+- 🚀 **Future Update Detection** (coming soon): Automatically compares installed mods with the latest versions on Nexus Mods, notifying you or allowing one‑click updates.
+
+### IV. 🔧 Online Fix Tool for Non‑Legit Copies
+
+- 🧩 **Auto‑injection & Restoration**: Automatically injects the online fix before launching the game, and restores the original files after the game exits – no manual intervention required, ensuring both online functionality and game integrity.
+
+### V. 📖 User Guidance & Configuration
+
+- 🎓 **Built‑in Tutorial**: Step‑by‑step text guidance for every operation, lowering the learning curve.
+- ⚙️ **Minimal Configuration**: Only two things are required – the path to the game executable (`.exe`) and your Nexus Mods API key. Everything else is handled automatically.
+
+---
+
+## 💡 Technical Highlights
+
+- 🌉 **Plugin‑based Web Integration**: Enables seamless communication between your browser and the local manager.
+- 🛡️ **Safe Patch Injection**: Uses a temporary file replacement mechanism; files are automatically restored when the game exits, leaving no residue.
+
+---
+
+## 👥 Target Audience
+
+- 🎲 **Heavy Mod Users**: Need batch management and frequent switching of mod configurations.
+- 🤝 **Online Fix Users** (non‑legit copies): Want automated handling of patch injection and restoration.
+- 🗃️ **Save Collectors**: Need to sync saves across devices or manage multiple progress files with fine control.
+
+---
+
+## 🗺️ Roadmap
+
+- ✅ Mod version update check & one‑click upgrade
+- 🌍 Support for more mod sources (e.g., Mod DB, Steam Workshop mapping)
+
+---
+
+> 💬 **Keep mod management simple – you focus on the game, leave the rest to the manager.**
+
+*— Author: ckcc_baize*
