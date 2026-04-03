@@ -1,0 +1,29 @@
+name: Release Version Folder
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 从 tag 中提取版本号，例如 v1.0.0 → 1.0.0
+      - name: Get version
+        id: version
+        run: echo "ver=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      # 打包对应版本文件夹
+      - name: Zip version folder
+        run: zip -r mod-${{ steps.version.outputs.ver }}.zip version/${{ steps.version.outputs.ver }}/
+
+      # 上传到 Release
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: mod-${{ steps.version.outputs.ver }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
