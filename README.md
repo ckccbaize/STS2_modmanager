@@ -4,12 +4,6 @@
 
 ---
 
-⚠️注意：n网下载的2.6.0beta并非完整版需要配合fix_steam文件夹中的补丁内容使用（n网上补丁被检测）
-请将此文件夹放置于管理器同目录下
-Note: the 2.6.0beta downloaded from the N-net is not a complete version and needs to be used together with the patch content in the fix_steam folder (N-net patch is detected). Please put this folder in the same directory as the manager.
-
-
-
 ## ✨ 核心功能概览
 
 ### 一、📦 模组管理
