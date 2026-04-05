@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://0r7qx5klyi1"]
+
+[ext_resource type="Script" uid="uid://rm2m8h775g1w" path="res://ui/save_item.gd" id="1_save_item"]
+
+[node name="SaveItem" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 35)
+script = ExtResource("1_save_item")
+
+[node name="BgColor" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.13, 0.13, 0.13, 1)
+
+[node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="NameLabel" type="Label" parent="HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Save Name"
+
+[node name="DateLabel" type="Label" parent="HBox"]
+layout_mode = 2
+text = "2024-01-01"
+
+[node name="TypeLabel" type="Label" parent="HBox"]
+layout_mode = 2
+text = "Steam"
+
+[node name="SizeLabel" type="Label" parent="HBox"]
+layout_mode = 2
+text = "0 KB"

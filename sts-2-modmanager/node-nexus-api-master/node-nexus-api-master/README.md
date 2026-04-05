@@ -1,0 +1,336 @@
+# Nexus API
+
+## Introduction
+
+The Nexus API provides applications access to Nexus Mods metadata including lists of games, mods and individual files, version information and so on.
+
+## Authorization
+
+All requests must identify the user and the application which is making the request. To achieve this, a set of parameters must be set in the header of all requests.
+
+### APIKEY
+
+An APIKEY can be created for a specific user and a specific application on the Nexus Mods website. This key can be manually copied into your application and used when generating requests. Alternatively, a websocket-based Single Sign-On system can be used as described further down.
+
+Based on this key, access for individual users or applications can be revoked (by Nexus Mods or the user himself), and access rights can be restricted (e.g. an application might be allowed to read mod meta data but not to make endorsements in the name of the user), finally, the key can also be used for network traffic throttling.
+
+For this reason it's not acceptable for an application to use API keys created for other applications.
+
+Before API Keys for your application can be generated you have to register your application with Nexus Mods. You will be assigned an appid.
+
+### Protocol-Version
+
+The protocol version identifies the exact protocol the client expects from the server and allows us to make improvements to the API without breaking older clients.
+This version is set automatically by this library and there is no good reason to override it.
+
+### Application-Version
+
+The application version - which has to follow semantic versioning guidelines - identifies the version of your application and may be used to work around problems without affecting all users of the application.
+
+E.g. if one version of your application has a bug that leads to it spamming a certain request, we might block that request for that application version without affecting other versions which don't have the problem.
+
+Therefore it's in your, and your users best interest to provide a version in the right format and keeping it up-to-date.
+
+## Single Sign-On
+
+As described above, an APIKEY can be generated using a websocket-based protocol. This is *not* part of this library.
+
+### Process
+
+- Generate a random unique id (we suggest uuid v4)
+- Create a websocket connection to wss://sso.nexusmods.com
+- When the connection is established, send a JSON encoded message containing the id you just generated and the appid you got on registration.
+Example: { "id": "4c694264-1fdb-48c6-a5a0-8edd9e53c7a6", "appid": "your_fancy_app" }
+- From now on, until the connection is closed, send a websocket ping once every 30 seconds.
+- Have the user open _https://www.nexusmods.com/sso?id=xyz_ (_id_ being the random id you generated in step 1) _in the default browser_
+- On the website users will be asked to log-in to Nexus Mods if they aren't already. Then they will be asked to authorize your application to use their account.
+- Once the user confirms, a message will be sent to your websocket with the APIKEY (not encoded, just the plain key). This is the only non-error message you will ever receive from the server.
+- Save away the key and close the connection.
+
+## API Reference
+
+All relevant functionality is accessible through the [Nexus class](https://github.com/Nexus-Mods/node-nexus-api/blob/master/docs/classes/_nexus_.nexus.md).
+
+The API may throw a bunch of [Custom Errors](https://github.com/Nexus-Mods/node-nexus-api/blob/master/docs/modules/_customerrors_.md).
+
+### GraphQL Queries
+
+When making GraphQL queries, some fields require parameters. For example, `thumbnailUrl` in `ICollectionImage` requires a `size` parameter. You can pass parameters using the `$filter` property:
+
+```typescript
+// Example: Querying collection with thumbnail URLs at MED size
+const collection = await nexus.getCollectionGraph({
+  name: true,
+  headerImage: {
+    url: true,
+    thumbnailUrl: {
+      $filter: { size: 'MED' }
+    }
+  },
+  tileImage: {
+    url: true,
+    thumbnailUrl: {
+      $filter: { size: 'MED' }
+    }
+  }
+}, 'collection-slug');
+```
+
+Available thumbnail sizes for `thumbnailUrl` are typically: `SMALL`, `MED`, `LARGE` (refer to the [Nexus Mods GraphQL documentation](https://graphql.nexusmods.com/) for the complete list).
+
+### Querying Mod File Contents
+
+The `modFileContents` method allows you to search and retrieve information about individual files within mod archives. This is useful for finding specific file types, paths, or analyzing mod structure.
+
+#### Basic Usage
+
+```typescript
+// Query basic file information
+const results = await nexus.modFileContents({
+  nodes: {
+    id: true,
+    modId: true,
+    fileId: true,
+    filePath: true,
+    fileName: true,
+    fileExtension: true,
+    fileSize: true
+  },
+  totalCount: true,
+  nodesCount: true
+});
+
+console.log(`Found ${results.totalCount} files`);
+console.log(`Returned ${results.nodesCount} files in this page`);
+```
+
+#### Filtering
+
+The `modFileContents` method supports extensive filtering options:
+
+```typescript
+// Find all .esp files in a specific mod
+const espFiles = await nexus.modFileContents(
+  {
+    nodes: {
+      filePath: true,
+      fileName: true,
+      fileSize: true
+    },
+    totalCount: true
+  },
+  {
+    modId: [{ value: '12345', op: 'EQUALS' }],
+    fileExtensionExact: [{ value: 'esp', op: 'EQUALS' }]
+  }
+);
+
+// Find files matching a wildcard pattern
+const meshFiles = await nexus.modFileContents(
+  {
+    nodes: {
+      filePath: true,
+      fileSize: true
+    }
+  },
+  {
+    filePathWildcard: [{ value: 'Data/Meshes/*', op: 'WILDCARD' }]
+  }
+);
+
+// Find files by exact path (using MATCHES - all terms present in any order)
+const specificPath = await nexus.modFileContents(
+  {
+    nodes: {
+      filePath: true,
+      fileName: true
+    }
+  },
+  {
+    filePathPartsExact: [{ value: 'Data Meshes armor.nif', op: 'MATCHES' }]
+  }
+);
+
+// Filter by file size (bytes) - note values are strings
+const largeFiles = await nexus.modFileContents(
+  {
+    nodes: {
+      filePath: true,
+      fileSize: true
+    }
+  },
+  {
+    fileSize: [{ value: '1048576', op: 'GT' }] // Files > 1MB
+  }
+);
+
+// Complex filters using logical operators
+const complexFilter = await nexus.modFileContents(
+  {
+    nodes: {
+      filePath: true,
+      fileName: true
+    }
+  },
+  {
+    op: 'AND',
+    filter: [
+      { fileExtensionExact: [{ value: 'esp', op: 'EQUALS' }] },
+      { fileSize: [{ value: '100000', op: 'LT' }] }
+    ]
+  }
+);
+
+// OR operator example - find .esp OR .esm files
+const pluginFiles = await nexus.modFileContents(
+  {
+    nodes: {
+      filePath: true,
+      fileName: true
+    }
+  },
+  {
+    op: 'OR',
+    filter: [
+      { fileExtensionExact: [{ value: 'esp', op: 'EQUALS' }] },
+      { fileExtensionExact: [{ value: 'esm', op: 'EQUALS' }] }
+    ]
+  }
+);
+```
+
+#### Pagination
+
+For large result sets, use offset and count parameters:
+
+```typescript
+const pageSize = 50;
+let offset = 0;
+let allFiles = [];
+
+while (true) {
+  const results = await nexus.modFileContents(
+    {
+      nodes: {
+        filePath: true,
+        fileName: true
+      },
+      nodesCount: true,
+      totalCount: true
+    },
+    { modId: [{ value: '12345', op: 'EQUALS' }] },
+    offset,  // offset
+    pageSize // count
+  );
+
+  allFiles.push(...results.nodes);
+
+  if (offset + pageSize >= results.totalCount) {
+    break;
+  }
+
+  offset += pageSize;
+}
+
+console.log(`Retrieved all ${allFiles.length} files`);
+```
+
+#### Available Filter Options
+
+- `fileId` - Filter by specific file ID(s) - uses `IBaseFilterValue` (EQUALS, NOT_EQUALS)
+- `modId` - Filter by specific mod ID(s) - uses `IBaseFilterValue` (EQUALS, NOT_EQUALS)
+- `gameId` - Filter by game ID(s) - uses `IBaseFilterValue` (EQUALS, NOT_EQUALS)
+- `filePathWildcard` - Match file paths using wildcards (e.g., `"Data/Meshes/*"`) - uses `IBaseFilterValueEqualsWildcard` (EQUALS, NOT_EQUALS, WILDCARD)
+- `filePathPartsExact` - Match path terms (e.g., `"Data Meshes armor.nif"`) - uses `IBaseFilterValueEqualsMatches` (EQUALS, NOT_EQUALS, MATCHES)
+- `fileNameWildcard` - Match file names using wildcards (e.g., `"*.esp"`) - uses `IBaseFilterValueEqualsWildcard` (EQUALS, NOT_EQUALS, WILDCARD)
+- `fileExtensionExact` - Match specific file extensions (e.g., `"esp"`) - uses `IBaseFilterValueEqualsMatches` (EQUALS, NOT_EQUALS, MATCHES)
+- `fileSize` - Filter by file size in bytes - uses `IBaseFilterValueNumeric` (EQUALS, NOT_EQUALS, GT, GTE, LT, LTE)
+
+#### Filter Operators
+
+**Basic Operators (IBaseFilterValue):**
+- `EQUALS` - Exact match
+- `NOT_EQUALS` - Does not equal
+
+**Wildcard Operators (IBaseFilterValueEqualsWildcard):**
+- `EQUALS` - Exact match
+- `NOT_EQUALS` - Does not equal
+- `WILDCARD` - Matches with leading/trailing wildcards, all terms present in any order
+
+**Match Operators (IBaseFilterValueEqualsMatches):**
+- `EQUALS` - Exact match
+- `NOT_EQUALS` - Does not equal
+- `MATCHES` - All terms present in any order (no wildcards, but stems may match)
+
+**Numeric Operators (IBaseFilterValueNumeric):**
+- `EQUALS` - Exact match
+- `NOT_EQUALS` - Does not equal
+- `GT` - Greater than
+- `GTE` - Greater than or equal to
+- `LT` - Less than
+- `LTE` - Less than or equal to
+
+**Note:** All filter values must be strings, including numeric values like file IDs and sizes.
+
+#### Logical Operators
+
+Combine multiple filters using logical operators in the `op` field:
+
+- `AND` - All nested filters must match
+- `OR` - At least one nested filter must match
+
+### Throttling
+
+The library implements request throttling to avoid spamming the API.
+This is done on two levels: The client will use a quota of 300 (600 for premium) requests that can be used in bursts but only recover one request per second so it won't allow for sustained high traffic.
+
+the server will also reject requests if traffic is to high both total traffic and per user by replying with a HTTP message code 429. In this event the api will reset it's quota to 0.
+
+Please note that tampering with this throttling may lead to more requests being  blocked, resulting in even worse performance for your users, or - in extreme cases - even revocation of API Keys.
+
+### Feedback API
+
+The library contains a feedback API but it's only intended for internal use
+
+## OAuth support
+
+Experimental support for OAuth/JWT has been added to this library.
+
+Gaining a JWT is not part of this library.
+
+Once you have a JWT, refreshToken and fingerprint you can create a client like so:
+
+```
+const credentials = {
+    token: '<<JWT>>',
+    refreshToken: '<<REFRESH_TOKEN>>',
+    fingerprint: '<<FINGERPRINT>>',
+};
+
+const config = {
+    id: '<<OAUTH_CLIENT_ID>>',
+    secret: '<<OAUTH_CLIENT_SECRET>>',
+};
+
+const appName = '<<YOUR_APP_NAME>>';
+const appVersion = '<<YOUR_APP_VERSION>>';
+const defaultGame = '1';
+
+const client = Nexus.createWithOAuth(credentials, config, appName, appVersion, defaultGame).then(nexus => {
+    console.log(`Hello your Nexus client is here: ${nexus}`);
+});
+```
+
+The client handles dealing with expired tokens by calling a refresh token endpoint. An instance of the client will retain these new credentials for the next time a request is made. But when you next create a client instance, it is your responsibility to provide these new credentials from your storage mechanism.
+
+You can listen to credential refreshes and pass them to your app for storage and later re-use:
+
+```
+const callback = () => {
+    console.log(`We have received new credentials: ${credentials}. They should now be stored somewhere.`);
+}
+
+const client = Nexus.createWithOAuth(credentials, config, appName, appVersion, defaultGame, timeout, callback).then(nexus => {
+    ...
+});
+```

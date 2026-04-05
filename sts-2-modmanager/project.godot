@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="STS2 Mod Manager"
+config/version="2.1.0 (beta)"
+run/main_scene="res://modmanager.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+boot_splash/bg_color=Color(0.08078336, 0.080783345, 0.0807833, 1)
+boot_splash/image="uid://tvmomjxl1dll"
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=700
+window/size/resizable=false
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/agent/plugin.cfg", "res://addons/godot_mcp/plugin.cfg")
+
+[godot_mcp]
+
+bind_mode=0
+custom_bind_ip=""
+port_override_enabled=false
+port_override=6550
+
+[logging]
+
+file_logging/enable=true
+file_logging/log_level=0
+
+[rendering]
+
+textures/canvas_textures/default_icon="res://icon.svg"

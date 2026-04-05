@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format="3" uid="uid://dre0kb865gwv0"]
+
+[ext_resource type="Script" path="res://ui/mod_item.gd" id="1_mod_item"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1"]
+bg_color = Color(0.13, 0.13, 0.13, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="ModItem" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 35)
+script = ExtResource("1_mod_item")
+
+[node name="BgColor" type="ColorRect" parent="."]
+layout_mode = "2"
+color = Color(0.13, 0.13, 0.13, 1)
+
+[node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = "2"
+theme_override_constants/separation = 0
+
+[node name="CheckBox" type="CheckBox" parent="HBox"]
+layout_mode = "2"
+
+[node name="NameLabel" type="Label" parent="HBox"]
+layout_mode = "2"
+size_flags_horizontal = "3"
+size_flags_stretch_ratio = 2.0
+clip_text = true
+text = "名称"
+
+[node name="VersionLabel" type="Label" parent="HBox"]
+layout_mode = "2"
+size_flags_horizontal = "1"
+size_flags_stretch_ratio = 0.8
+clip_text = true
+text = "v1.0"
+
+[node name="AuthorLabel" type="Label" parent="HBox"]
+layout_mode = "2"
+size_flags_horizontal = "3"
+size_flags_stretch_ratio = 1.5
+clip_text = true
+text = "作者"
+
+[node name="TypeLabel" type="Label" parent="HBox"]
+layout_mode = "2"
+size_flags_horizontal = "4"
+size_flags_stretch_ratio = 0.7
+custom_minimum_size = Vector2(45, 0)
+clip_text = true
+text = "类型"

@@ -1,0 +1,1472 @@
+/**
+ * result of the validateKey request
+ */
+export interface IValidateKeyResponse {
+  /**
+   * nexus user id
+   */
+  user_id: number;
+  /**
+   * the api key
+   */
+  key: string;
+  /**
+   * User Name
+   */
+  name: string;
+  /**
+   * user is premium
+   */
+  is_premium: boolean;
+  /**
+   * user is supporter
+   */
+  is_supporter: boolean;
+  /**
+   * email address of the user
+   */
+  email: string;
+  /**
+   * url of the user image
+   */
+  profile_url: string;
+}
+
+export interface IUser {
+  member_id: number;
+  member_group_id: number;
+  name: string;
+  avatar?: string;
+}
+
+export interface IUserInfo {
+  sub: string;
+  name: string;
+  email: string;
+  avatar: string;
+  group_id: number;
+  membership_roles: string[];
+  premium_expiry: number;
+  preferences: IPreference;
+}
+
+
+export type EndorsedStatus = 'Undecided' | 'Abstained' | 'Endorsed';
+
+/**
+ * possible states the mod can be in
+ */
+export type ModStatus = 'under_moderation' | 'published' | 'not_published' | 'publish_with_game' | 'removed' | 'wastebinned' | 'hidden';
+
+/**
+ * Details about a mod
+ */
+export interface IModInfo {
+  /**
+   * id of this mod (should be the same you queried for)
+   */
+  mod_id: number;
+  /**
+   * internal id of the game this mod belongs to
+   */
+  game_id: number;
+  /**
+   * domain name (as used in urls and as the game id in all other requests)
+   */
+  domain_name: string;
+  /**
+   * id of the category
+   */
+  category_id: number;
+  /**
+   * whether this mod is tagged as adult
+   */
+  contains_adult_content: boolean;
+  /**
+   * Name of the mod
+   * (not present if the file is under moderation)
+   */
+  name?: string;
+  /**
+   * short description
+   */
+  summary?: string;
+  /**
+   * long description (bbcode)
+   */
+  description?: string;
+  /**
+   * mod version
+   */
+  version: string;
+  /**
+   * Author of the mod
+   */
+  author: string;
+  /**
+   * more detailed info about the author
+   */
+  user: IUser;
+  /**
+   * name of the user who uploaded this mod
+   */
+  uploaded_by: string;
+  /**
+   * url of the profile image of the uploader
+   */
+  uploaded_users_profile_url: string;
+  /**
+   * current status of the mod
+   */
+  status: ModStatus;
+  /**
+   * whether the mod is currently available/visible to users
+   * If a mod isn't available the api returns very limited information, essentially
+   * hiding all textual info that could contain offensive content but certain "maintenance" info
+   * is still provided.
+   */
+  available: boolean;
+  /**
+   * url of the primary screenshot
+   */
+  picture_url?: string;
+  /**
+   * unix timestamp of when the mod was created
+   */
+  created_timestamp: number;
+  /**
+   * readable time of when the mod was created
+   */
+  created_time: string;
+  /**
+   * unix timestamp of when the mod was updated
+   */
+  updated_timestamp: number;
+  /**
+   * readable time of when the mod was updated
+   */
+  updated_time: string;
+  /**
+   * whether this mod allows endorsements
+   */
+  allow_rating: boolean;
+  /**
+   * endorsement count
+   */
+  endorsement_count: number;
+  /**
+   * number of total downloads
+   */
+  mod_downloads: number;
+  /**
+   * number of unique downloads
+   */
+  mod_unique_downloads: number;
+  /**
+   * obsolete - will be removed in the near future
+   */
+  endorsement?: {
+    endorse_status: EndorsedStatus,
+    timestamp: number,
+    version: number,
+  };
+  /**
+   * detailed requirements info
+   * may be missing if there are no requirements
+   * NOTE: this will need to be a file info object in the future.
+   * */
+  requirements?: IModRequirements;
+}
+
+/**
+ * Information about a specific mod file
+ */
+export interface IFileInfo {
+  /**
+   * file id
+   */
+  file_id: number;
+  /**
+   * File type as a number (1 = main, 2 = patch, 3 = optional, 4 = old, 6 = deleted, 7 = archived)
+   */
+  category_id: number;
+  /**
+   * File type as a string ('MAIN', 'PATCH', 'OPTION', 'OLD_VERSION', 'DELETED', 'ARCHIVED')
+   */
+  category_name: string;
+  /**
+   * html encoded changelog (matched via file version)
+   * null if there is none
+   */
+  changelog_html: string;
+  /**
+   * url of the content preview (json file containing list of files)
+   */
+  content_preview_link: string;
+  /**
+   * readable file name
+   */
+  name: string;
+  /**
+   * file description
+   */
+  description: string;
+  /**
+   * File version (doesn't actually have to match any mod version)
+   */
+  version: string;
+  /**
+   * File size in kilobytes
+   */
+  size: number;
+  /**
+   * File size. also in kilobytes. Because - ugh, don't ask
+   */
+  size_kb: number;
+  /**
+   * actual file name (derived from name with id and version appended)
+   */
+  file_name: string;
+  /**
+   * unix timestamp of the time this file was uploaded
+   */
+  uploaded_timestamp: number;
+  /**
+   * readable representation of the file time
+   */
+  uploaded_time: string;
+  /**
+   * version of the mod (at the time this was uploaded?)
+   */
+  mod_version: string;
+  /**
+   * link to the virus scan results
+   * null if there is none
+   */
+  external_virus_scan_url: string;
+  /**
+   * whether this is the primary download for the mod
+   * (the one that users download through the link in the top right of the mod page)
+   */
+  is_primary: boolean;
+}
+
+/**
+ * list of files (and update chain) associated with a mod
+ */
+export interface IModFiles {
+  /**
+   * list of file updates stored with a mod
+   */
+  file_updates: IFileUpdate[];
+  /**
+   * list of files stored for a mod
+   */
+  files: IFileInfo[];
+}
+
+/**
+ * details about a file update
+ * These exist only if the author sets the field "this file is
+ * a newer version of ...".
+ */
+export interface IFileUpdate {
+  /**
+   * id of the new file
+   */
+  new_file_id: number;
+  /**
+   * name of the new file
+   */
+  new_file_name: string;
+  /**
+   * id of the old file
+   */
+  old_file_id: number;
+  /**
+   * name of the old file
+   */
+  old_file_name: string;
+  /**
+   * readable upload time of the new file
+   */
+  uploaded_time: string;
+  /**
+   * unix timestamp of when the new file was uploaded
+   */
+  uploaded_timestamp: number;
+}
+
+/**
+ * Nexus Mods category
+ */
+export interface IModCategory {
+  /**
+   * numerical id
+   */
+  category_id: number;
+  /**
+   * display name
+   */
+  name: string;
+  /**
+   * id of the parent category or false if it's a top-level
+   * category.
+   * Note: often there is only a single root category named after the game.
+   * But in some cases there are additional roots, e.g. the game 'skyrim' has
+   * the roots 'Skyrim' and 'Sure AI: Enderal'
+   */
+  parent_category: number | false;
+}
+
+/**
+ * basic information about a game
+ */
+export interface IGameListEntry {
+  /**
+   * numerical id
+   */
+  id: number;
+  /**
+   * domain name (as used in urls and as the game id in all other requests)
+   */
+  domain_name: string;
+  /**
+   * display name
+   */
+  name: string;
+  /**
+   * lower-cased display name
+   */
+  name_lower: string;
+  /**
+   * url for the corresponding forum section
+   */
+  forum_url: string;
+  /**
+   * url for the primary nexusmods page (should be https://www.nexusmods.com/<domain_name>)
+   */
+  nexusmods_url: string;
+  /**
+   * genre of the game
+   * (possible values?)
+   */
+  genre: string;
+  /**
+   * number of mods hosted on nexus for this game
+   */
+  mods: number;
+  /**
+   * number of files hosted on nexus for this game
+   */
+  file_count: number;
+  /**
+   * number of downloads from nexus for files for this game
+   */
+  downloads: number;
+  /**
+   * unix timestamp of when this game was added to nexus mods
+   */
+  approved_date: number;
+  /**
+   * number of collections for this game
+   */
+  collections: number;
+}
+
+/**
+ * extended information about a game
+ */
+export interface IGameInfo extends IGameListEntry {
+  /**
+   * list of categories for this game
+   */
+  categories: IModCategory[];
+}
+
+/**
+ * direct download url for a file from nexus
+ * Please note that these links have an expiry time, it's not
+ * useful to store it for more than a few minutes
+ */
+export interface IDownloadURL {
+  /**
+   * the url itself
+   */
+  URI: string;
+  /**
+   * Display name of the download server hosting the file
+   */
+  name: string;
+  /**
+   * short name (id?) of the download server
+   */
+  short_name: string;
+}
+
+export interface IModInfoEx extends IModInfo {
+  mod_id: number;
+  game_id: number;
+}
+
+/**
+ * Result from a md5 lookup
+ */
+export interface IMD5Result {
+  mod: IModInfoEx,
+  file_details: IFileInfo,
+}
+
+/**
+ * Info about a Feedback report
+ * INTERNAL USE ONLY
+ */
+export interface IIssue {
+  id: number;
+  issue_number: number;
+  issue_state: string;
+  issue_title: string;
+}
+
+/**
+ * Info about a feedback report exported to github
+ * INTERNAL USE ONLY
+ */
+export interface IGithubIssue {
+  id: number;
+  issue_number: number;
+  issue_title: string;
+  issue_state: string;
+  grouping_key: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ICollectionInfo {
+  collection_id?: number;
+  author: string;
+  author_url: string;
+  name: string;
+  version: string;
+  description: string;
+  domain_name: string;
+  adult_content: boolean;
+}
+
+export type UpdatePolicy = 'exact' | 'latest' | 'prefer';
+export type SourceType = 'browse' | 'manual' | 'direct' | 'nexus';
+
+/**
+ * response to a feedback request
+ * INTERNAL USE ONLY
+ */
+export interface IFeedbackResponse {
+  id: number;
+  status: number;
+  created_at: string;
+  updated_at: string;
+  reference: string;
+  grouping_key: string;
+  github_issue: IGithubIssue;
+  user_blacklisted: boolean;
+  count: number;
+}
+
+/**
+ * response to a request for changelogs
+ */
+export interface IChangelogs {
+  [versionNumber: string]: string[],
+}
+
+/**
+ * response to a request for tracked mods
+ */
+export interface ITrackedMod {
+  mod_id: number;
+  domain_name: string;
+}
+
+/**
+ * response to a request for endorsements
+ */
+export interface IEndorsement {
+  mod_id: number;
+  domain_name: string;
+  date: number;
+  version: string;
+  status: EndorsedStatus;
+}
+
+/**
+ * (success) response to a endorse/abstain request
+ */
+export interface IEndorseResponse {
+  /**
+   * textual reply to the request, something like "Updated to: Endorsed"
+   */
+  message: string;
+  status: EndorsedStatus;
+}
+
+/**
+ * (success) response to a track/untrack request
+ */
+export interface ITrackResponse {
+  /**
+   * textual result of the action, something like "User 123 is now Tracking Mod: 456"
+   */
+  message: string;
+}
+
+/**
+ * colourscheme entry as returned by getColourSchemes
+ */
+export interface IColourScheme {
+  id: number;
+  name: string;
+  primary_colour: string;
+  secondary_colour: string;
+  darker_colour: string;
+}
+
+/**
+ * range of updates to query
+ */
+export type UpdatePeriod = '1d' | '1w' | '1m';
+
+/**
+ * an entry in the update list
+ */
+export interface IUpdateEntry {
+  mod_id: number;
+  latest_file_update: number;
+  latest_mod_activity: number;
+}
+
+
+// GraphQL classes
+
+// just a string in format YYYY-MM-DDTHH:MM:SSZ, see RFC3339
+export type IDateTime = string;
+
+export interface ITimestamped {
+  updatedAt: IDateTime;
+  createdAt: IDateTime;
+}
+
+export interface IGraphUser {
+  avatar: string;
+  memberId: number;
+  name: string;
+}
+
+export interface ICollectionMetadata {
+  endorsementValue: number;
+  downloadedAt?: IDateTime;
+}
+
+export interface ICollectionBadge {
+  name: string;
+  description: string;
+}
+
+export type CollectionPermission =
+  | 'collection:publish'
+  | 'collection:moderate'
+  | 'collection:discard'
+  | 'collection:view_discarded'
+  | 'collection:view_unlisted'
+  | 'collection:view_under_moderation'
+  | 'collection:view_draft_revisions'
+  | 'collection:add_tag'
+  | 'collection:remove_tag'
+  | 'collection:set_status'
+  | 'collection:discard_revisions'
+  | 'collection:edit'
+  | 'collection:close_bug_reports'
+  | 'collection:open_bug_reports';
+
+export interface ICollectionPermission {
+  global: boolean;
+  key: CollectionPermission | string;
+}
+
+export interface IGame {
+  id: number;
+  domainName: string;
+  name: string;
+}
+
+export interface IGameExpansion {
+  gameId: string; // domainName!
+  id: string;
+  name: string;
+}
+
+export interface ICategory {
+  approved: boolean;
+  approvedBy?: number;
+  categoryGames: IGame[];
+  createdAt: IDateTime;
+  description: string;
+  discardedAt?: IDateTime;
+  id: number;
+  name: string;
+  parentId: number;
+  suggestedBy: number;
+  updatedAt: IDateTime;
+}
+
+export interface ITagCategory extends ITimestamped {
+  discardedAt?: IDateTime;
+  id: string;
+  name: string;
+  tags: ITag[];
+}
+
+export interface ITag extends ITimestamped {
+  adult: boolean;
+  category?: ITagCategory;
+  discardedAt: IDateTime;
+  global: boolean;
+  id: string;
+  name: string;
+}
+
+/*
+export interface IImageType {
+  description: string;
+  id: number;
+  rHorizontal: number;
+  rVertical: number;
+}
+*/
+
+export interface ICollectionImage extends ITimestamped {
+  altText: string;
+  collection: ICollection;
+  discardedAt?: IDateTime;
+  id: string;
+  position: number;
+  revision?: IRevision;
+  thumbnailUrl?: string; // Note: requires size parameter in GraphQL query, e.g., thumbnailUrl(size: med)
+  url: string;
+  user: IGraphUser;
+}
+
+export interface ICollectionVideo extends ITimestamped {
+  collection: ICollection;
+  description: string;
+  discardedAt?: IDateTime;
+  id: string;
+  position: number;
+  revision?: IRevision;
+  title: string;
+  url: string;
+  user: IGraphUser;
+}
+
+export type ICollectionMedia = ICollectionImage & ICollectionVideo;
+
+export interface IForumPost {
+  authorId: number;
+  authorName: string;
+  id: number;
+  post: string;
+  postDate: IDateTime;
+  user: IGraphUser;
+}
+
+export interface IForumTopic {
+  approved: boolean;
+  description: string;
+  forumId: number;
+  id: number;
+  pinned: boolean;
+  posts: IForumPost[];
+  postsCount: number;
+  state: string;
+  title: string;
+  views: number;
+  visible: string;
+}
+
+/**
+ * Base information about a collection
+ */
+export interface ICollection extends ITimestamped {
+  category?: ICategory;
+  collectionStatus?: string;
+  contentPreviewLink: string;
+  currentRevision: IRevision;
+  discardedAt?: IDateTime;
+  downloadLink: string;
+  draftRevisionNumber?: number;
+  enableDonations: boolean;
+  endorsements: number;
+  forumTopic?: IForumTopic;
+  game: IGame;
+  gameId: number;
+  headerImage?: ICollectionImage;
+  id: number;
+  latestPublishedRevision?: IRevision;
+  slug: string;
+  media: ICollectionMedia[];
+  metadata?: ICollectionMetadata;
+  name: string;
+  revisions: IRevision[];
+  tags: ITag[];
+  tileImage?: ICollectionImage;
+  totalDownloads?: number;
+  user: IGraphUser;
+  userId: number;
+  viewerIsBlocked: boolean;
+  visible: boolean;
+  description: string;
+  summary: string;
+  commentLink: string;
+  overallRating: string;
+  overallRatingCount: number;
+  recentRating: string;
+  recentRatingCount: number;
+  badges?: ICollectionBadge[];
+  permissions?: ICollectionPermission[];
+}
+
+export interface IExternalResource {
+  collectionRevisionId: number;
+  fileExpression: string;
+  id: number;
+  instructions: string;
+  name: string;
+  optional: boolean;
+  resourceType: string;
+  resourceUrl: string;
+  version: string;
+}
+export type RevisionStatus = 'is_private' | 'is_public' | 'is_hidden' | 'is_testing' | 'is_nuked';
+
+export interface ICollectionSchema extends ITimestamped {
+  id: number;
+  version: string;
+}
+
+export interface ICollectionBugReport extends ITimestamped {
+  collectionBugStatusId: number;
+  collectionRevisionId: number;
+  description: string;
+  id: number;
+  title: string;
+  user: IGraphUser;
+  userId: number;
+}
+
+export interface IModCategory {
+  date?: number;
+  gameId: number;
+  id: string;
+  name: string;
+  tags?: string;
+}
+
+export interface ITrackingState {
+  test?: number;
+}
+
+/**
+ * A download mirror for a mod
+ */
+export interface IModMirror {
+  /** Download count for this mirror */
+  count?: number;
+  /** The database ID for this game */
+  gameId: number;
+  /** The database ID for this mod mirror */
+  id: string;
+  /** The database ID for this mod */
+  modId: number;
+  /** Name of this mirror */
+  name: string;
+  /** Download count for this mirror */
+  totalDownloads?: number;
+  /** URI for this mirror */
+  uri?: string;
+}
+
+/**
+ * GraphQL Mod information
+ */
+export interface IMod {
+  /** If true, this mod contains adult content (deprecated in favour of adultContent) */
+  adult?: boolean;
+  /** If true, this mod contains adult content */
+  adultContent?: boolean;
+  /** Author of this mod */
+  author?: string;
+  /** Category name of this mod */
+  category: string;
+  /** Time of when this mod was first created */
+  createdAt?: IDateTime;
+  /** A detailed description of this mod */
+  description: string;
+  /** If true, this mod can be downloaded without first visiting the Nexus site */
+  directDownloadEnabled?: boolean;
+  /** Download count of this mod */
+  downloads?: number;
+  /** Endorsement count of this mod */
+  endorsements?: number;
+  /** Size of the primary mod file in kilobytes */
+  fileSize?: number;
+  /** Game changed by this mod */
+  game: IGame;
+  /** The database ID for this game */
+  gameId: number;
+  /** The database ID for this mod */
+  id: number;
+  /** IP address (internal use) */
+  ipAddress: string;
+  /** If true, this mod is blocked from earning DP */
+  isBlockedFromEarningDp?: boolean;
+  /** Mirrors for this mod */
+  mirrors?: IModMirror[];
+  /** A mod category */
+  modCategory: IModCategory;
+  /** The database ID for this mod */
+  modId: number;
+  /** Requirements of this mod */
+  modRequirements?: IModRequirements;
+  /** Name of this mod */
+  name: string;
+  /** URL for the main mod image */
+  pictureUrl?: string;
+  /** Status of this mod */
+  status: string;
+  /** A brief summary of this mod */
+  summary: string;
+  /** URL for the blurred thumbnail mod image */
+  thumbnailBlurredUrl?: string;
+  /** URL for the large blurred thumbnail mod image */
+  thumbnailLargeBlurredUrl?: string;
+  /** URL for the large thumbnail mod image */
+  thumbnailLargeUrl?: string;
+  /** URL for the thumbnail mod image */
+  thumbnailUrl?: string;
+  /** Tracking data (internal use) */
+  trackingData: ITrackingState;
+  /** The database ID for this mod */
+  uid: string;
+  /** Time of when this mod was last updated */
+  updatedAt?: IDateTime;
+  /** Uploader of this mod */
+  uploader: IGraphUser;
+  /** Version of this mod */
+  version: string;
+  /** True if the viewer (current user) has blocked this mod */
+  viewerBlocked?: boolean;
+  /** A timestamp indicating the last time the user downloaded this mod */
+  viewerDownloaded?: IDateTime;
+  /** True indicates endorsement, false for abstention. Will be null if the user has not endorsed the mod */
+  viewerEndorsed?: boolean;
+  /** True if the viewer (current user) is blocked from interacting with this mod */
+  viewerIsBlocked?: boolean;
+  /** If true, the viewer (current user) is tracking this mod */
+  viewerTracked?: boolean;
+  /** True if the mod has been updated since the viewer (current user) downloaded it */
+  viewerUpdateAvailable?: boolean;
+}
+
+export interface IModRequirement {
+  externalRequirement: boolean;
+  gameId: string; // domainName!
+  id: string;
+  modId: string;
+  modName: string;
+  notes?: string;
+  url: string;
+}
+
+export interface IModRequirementsDlc {
+  gameExpansion: IGameExpansion;
+  notes?: string;
+}
+
+export interface IModRequiring {
+  externalRequirement: boolean;
+  gameId: string; // domainName!
+  id: string;
+  modId: string;
+  modName: string;
+  notes?: string;
+  url: string;
+}
+
+export interface IModRequirementPage {
+  facets?: INodesFacet[];
+  facetsData?: any;
+  nodes: IModRequirement[];
+  nodesCount: number;
+  nodesFacets?: INodesFacet[];
+  nodesFilter?: string;
+  totalCount: number;
+}
+
+export interface IModRequiringPage {
+  facets?: INodesFacet[];
+  facetsData?: any;
+  nodes: IModRequiring[];
+  nodesCount: number;
+  nodesFacets?: INodesFacet[];
+  nodesFilter?: string;
+  totalCount: number;
+}
+
+export interface IModRequirements {
+  dlcRequirements: IModRequirementsDlc[];
+  modsRequiringThisMod: IModRequiringPage;
+  nexusRequirements: IModRequirementPage;
+}
+
+/**
+ * Used to flag a mod file as a main, old or archived file
+ */
+export type ModFileCategory =
+  | 'MAIN'
+  | 'UPDATE'
+  | 'OPTIONAL'
+  | 'OLD_VERSION'
+  | 'MISCELLANEOUS'
+  | 'REMOVED'
+  | 'ARCHIVED';
+
+/**
+ * Records the outcome of the virus scan for a mod file
+ */
+export type VirusScanStatus =
+  | 'NOT_SCANNED'
+  | 'QUEUED'
+  | 'WAITING_REPORT'
+  | 'VERIFIED'
+  | 'INTERNALLY_VERIFIED'
+  | 'QUARANTINED'
+  | 'MANUALLY_VERIFIED'
+  | 'MOD_DOES_NOT_EXIST'
+  | 'FILE_NOT_FOUND'
+  | 'REPORT_ERROR'
+  | 'TOO_LARGE';
+
+/**
+ * Files belonging to a mod
+ */
+export interface IModFile {
+  /** The file category */
+  category?: ModFileCategory;
+  /** The database ID for this file category */
+  categoryId: number;
+  /** Patch notes for this mod file version */
+  changelogText?: string[];
+  /** Number of downloads for this file */
+  count: number;
+  /** Unix Timestamp for when this file was uploaded */
+  date: number;
+  /** Description for this file */
+  description: string;
+  /** Forms a composite key with the game_id */
+  fileId: number;
+  /** Game that this file relates to */
+  game: IGame;
+  /** ID of the object */
+  id?: string;
+  /** If true, this file can be downloaded by a mod manager */
+  manager: number;
+  /** Mod that this file belongs to */
+  mod: IMod;
+  /** The database ID for this mod */
+  modId: number;
+  /** File name */
+  name: string;
+  /** User that uploaded this file */
+  owner: IGraphUser;
+  /** If true, this file is the primary file for the mod */
+  primary: number;
+  /** URL for reporting this file */
+  reportLink: string;
+  /** TODO: what is this field for? */
+  requirementsAlert: number;
+  /** If true, this file has been virus scanned */
+  scanned: number;
+  /** Status of virus scanning on this file */
+  scannedV2?: VirusScanStatus;
+  /** Size of this file */
+  size: number;
+  /** Size of this file, in bytes */
+  sizeInBytes?: string;
+  /** Number of downloads for this file */
+  totalDownloads?: number;
+  /** Number of unique downloads for this file? */
+  uCount: number;
+  /** Unique ID for this file */
+  uid: string;
+  /** Number of unique downloads for this file */
+  uniqueDownloads?: number;
+  /** URL to download this file */
+  uri: string;
+  /** Version this file relates to */
+  version: string;
+}
+
+export interface ICollectionRevisionMod {
+  collectionRevisionId: number;
+  file?: IModFile;
+  fileId: number;
+  gameId: number;
+  id: number;
+  optional: boolean;
+  updatePolicy: string;
+  version: string;
+}
+
+export interface IPreSignedUrl {
+  url: string;
+  uuid: string;
+}
+export interface IRating {
+
+  average: number;
+  positive: number;
+  total: number;
+}
+
+export interface IRevisionMetadata {
+  ratingValue: RatingOptions;
+}
+
+export interface IGameVersion {
+  id: number;
+  reference: string;
+}
+
+export interface ICollectionChangelog {
+  collectionRevisionId: number;
+  createdAt: IDateTime;
+  description: string;
+  id: number;
+  revisionNumber: number;
+  updatedAt: IDateTime;
+}
+
+/**
+ * a specific revision of a collection
+ */
+export interface IRevision extends ITimestamped {
+  adultContent: string;
+  bugReports: ICollectionBugReport[];
+  collection: ICollection;
+  collectionChangelog: ICollectionChangelog;
+  collectionId: number;
+  collectionSchema: ICollectionSchema;
+  collectionSchemaId: number;
+  contentPreviewLink: string;
+  downloadLink: string;
+  externalResources: IExternalResource[];
+  fileSize: number;
+  gameVersions: IGameVersion[];
+  id: number;
+  installationInfo?: string;
+  latest: boolean;
+  metadata: IRevisionMetadata;
+  modCount?: number;
+  modFiles: ICollectionRevisionMod[];
+  rating: IRating;
+  revisionNumber: number;
+  revisionStatus: string;
+  status: string;
+  totalSize?: number;
+}
+
+export interface ICollectionManifestInfo {
+  author: string;
+  authorUrl?: string;
+  name: string;
+  description?: string;
+  summary?: string;
+  domainName: string;
+  gameVersions?: string[];
+}
+
+export interface ICollectionManifestModSource {
+  type: SourceType;
+  modId?: number;
+  fileId?: number;
+  md5?: string;
+  fileSize?: number;
+  updatePolicy?: UpdatePolicy;
+  logicalFilename?: string;
+  fileExpression?: string;
+  url?: string;
+  adultContent?: boolean;
+}
+
+export interface ICollectionManifestMod {
+  name: string;
+  version: string;
+  optional: boolean;
+  domainName: string;
+  source: ICollectionManifestModSource;
+  author?: string;
+}
+
+export interface ICollectionManifest {
+  info: ICollectionManifestInfo;
+  mods: ICollectionManifestMod[];
+}
+
+/**
+ * payload used to create a collection revision
+ */
+export interface ICollectionPayload {
+  adultContent: boolean;
+  collectionSchemaId: number;
+  collectionManifest: ICollectionManifest;
+}
+
+export interface ICreateCollectionResult {
+  collection?: Partial<ICollection>;
+  revision?: Partial<IRevision>;
+  success: boolean;
+}
+
+export interface IFileHash {
+  createdAt: IDateTime;
+  fileName: string;
+  fileSize: string;
+  fileType: string;
+  gameId: number;
+  md5: string;
+  modFile: IModFile;
+  modFileId: number;
+}
+
+/**
+ * Metadata about a single facet value for search filtering
+ */
+export interface INodesFacet {
+  /** Number of results available for this facet value */
+  count: number;
+  /** Name matching the graphql facet request */
+  facet: string;
+  /** Value available for this facet */
+  value: string;
+}
+
+/**
+ * Represents a file within a mod archive with its path and metadata
+ */
+export interface IModFileContent {
+  /** The database ID for this mod_file_content */
+  id: string;
+  /** Game ID this file belongs to */
+  gameId: number;
+  /** Mod ID this file belongs to */
+  modId: number;
+  /** File ID this file belongs to */
+  fileId: number;
+  /** Full path of the file within the archive */
+  filePath: string;
+  /** Path components split into array */
+  filePathParts: string[];
+  /** Name of the file */
+  fileName: string;
+  /** File extension */
+  fileExtension: string;
+  /** Size of the file in bytes (BigInt) */
+  fileSize: string;
+}
+
+/**
+ * Paginated response for mod file contents query
+ */
+export interface IModFileContentPage {
+  /** Nodes for pagination */
+  nodes: IModFileContent[];
+  /** Number of nodes returned by this query */
+  nodesCount: number;
+  /** Total number of files found */
+  totalCount: number;
+  /** Facets available for filtering */
+  facets?: INodesFacet[];
+  /** Facets data in object format */
+  facetsData?: any;
+  /** Node-specific facets */
+  nodesFacets?: INodesFacet[];
+  /** String representation of the filter query used */
+  nodesFilter?: string;
+}
+
+/**
+ * Filter comparison operators for elastic search queries
+ */
+export type FilterComparisonOperator =
+  | 'EQUALS'      // Exact match
+  | 'NOT_EQUALS'  // Not equal
+  | 'MATCHES'     // All terms present (any order), no wildcards but stems may match
+  | 'WILDCARD'    // All terms present (any order) with leading/trailing wildcards
+  | 'GT'          // Greater than
+  | 'GTE'         // Greater than or equal to
+  | 'LT'          // Less than
+  | 'LTE';        // Less than or equal to
+
+/**
+ * Filter comparison equals and matches operators for elastic search queries
+ */
+export type FilterComparisonOperatorEqualsMatches =
+  | 'EQUALS'      // Exact match
+  | 'NOT_EQUALS'  // Not equal
+  | 'MATCHES';    // Matches if all terms in the value are present (in any order). No wildcarding, though stems may match
+
+/**
+ * Filter comparison equals and wildcard operators for elastic search queries
+ */
+export type FilterComparisonOperatorEqualsWildcard =
+  | 'EQUALS'      // Exact match
+  | 'NOT_EQUALS'  // Not equal
+  | 'WILDCARD';   // Matches if all terms in the value are present (in any order), with leading/trailing wildcards applied
+
+/**
+ * Filter comparison numeric operators for elastic search queries
+ */
+export type FilterComparisonOperatorNumeric =
+  | 'EQUALS'      // Exact match
+  | 'NOT_EQUALS'  // Not equal
+  | 'GT'          // Greater than
+  | 'GTE'         // Greater than or equal to
+  | 'LT'          // Less than
+  | 'LTE';        // Less than or equal to
+
+/**
+ * Filter logical operators for elastic search queries
+ */
+export type FilterLogicalOperator =
+  | 'AND'  // Logical AND
+  | 'OR';  // Logical OR
+
+/**
+ * Base filter value for numeric comparisons
+ *  Note that regardless of the value type (string or number),
+ *  the value will be converted to the appropriate type based on the field being filtered.
+ */
+export interface IBaseFilterValue {
+  op: 'EQUALS' | 'NOT_EQUALS';
+  value: string | number;
+}
+
+/**
+ * Filter value for wildcard string matching
+ */
+export interface IBaseFilterValueEqualsWildcard {
+  op: FilterComparisonOperatorEqualsWildcard;
+  value: string;
+}
+
+/**
+ * Filter value for exact string matching with MATCHES operator
+ */
+export interface IBaseFilterValueEqualsMatches {
+  op: FilterComparisonOperatorEqualsMatches;
+  value: string;
+}
+
+/**
+ * Filter value for numeric comparisons with range operators
+ */
+export interface IBaseFilterValueNumeric {
+  op: FilterComparisonOperatorNumeric;
+  value: string;
+}
+
+/**
+ * Search filter for mod file contents query
+ */
+export interface IModFileContentSearchFilter {
+  /** Nested filters for complex queries */
+  filter?: IModFileContentSearchFilter[];
+  /** Logical operator for combining filter clauses */
+  op?: FilterLogicalOperator;
+  /** Filter by file ID */
+  fileId?: IBaseFilterValue[];
+  /** Filter by mod ID */
+  modId?: IBaseFilterValue[];
+  /** Filter by game ID */
+  gameId?: IBaseFilterValue[];
+  /** Filter by file path using wildcards (e.g., "Data/Meshes/*") */
+  filePathWildcard?: IBaseFilterValueEqualsWildcard[];
+  /** Filter by exact path parts (e.g., ["Data", "Meshes", "armor.nif"]) */
+  filePathPartsExact?: IBaseFilterValueEqualsMatches[];
+  /** Filter by file name using wildcards (e.g., "*.esp") */
+  fileNameWildcard?: IBaseFilterValueEqualsWildcard[];
+  /** Filter by exact file extension (e.g., "esp", "esm") */
+  fileExtensionExact?: IBaseFilterValueEqualsMatches[];
+  /** Filter by file size in bytes */
+  fileSize?: IBaseFilterValueNumeric[];
+}
+
+export type RatingOptions = 'positive' | 'negative' | 'abstained';
+
+// Preference enum types
+export type PreferencesCommentsEnum = 'COMMENTS_10' | 'COMMENTS_20' | 'COMMENTS_30' | 'COMMENTS_40' | 'COMMENTS_50';
+export type PreferencesDefaultMediaTabEnum = 'NEW' | 'TRENDING' | 'POPULAR' | 'RANDOM';
+export type PreferencesTimeRangeEnum = 'ALL_TIME' | 'ONE_DAY' | 'ONE_WEEK' | 'TWO_WEEKS' | 'FOUR_WEEKS' | 'ONE_YEAR';
+export type PreferencesDefaultModsTabEnum = 'NEW' | 'TRENDING' | 'POPULAR' | 'RANDOM' | 'UPDATED';
+export type PreferencesDefaultSortEnum = 'BY_RECENT_FILES' | 'BY_ENDORSEMENTS' | 'BY_DOWNLOADS' | 'BY_UNIQUE_DOWNLOADS' | 'BY_LAST_UPDATED_FILE' | 'BY_AUTHOR_NAME' | 'BY_FILE_NAME' | 'BY_FILE_SIZE' | 'RANDOM_SORTING' | 'LAST_COMMENT';
+export type PreferencesSearchTypeEnum = 'ALL_CONTENT' | 'GAMES' | 'MODS' | 'COLLECTIONS' | 'IMAGES' | 'VIDEOS' | 'USERS';
+export type PreferencesDefaultSearchViewEnum = 'STANDARD' | 'LIST' | 'COMPACT';
+export type PreferencesDlLocationEnum = 'NEXUS_CDN' | 'AMSTERDAM' | 'PRAGUE' | 'CHICAGO' | 'LOS_ANGELES' | 'MIAMI';
+export type PreferencesDownloadMethodEnum = 'POP_UP_BOX' | 'SEPARATE_PAGE';
+export type PreferencesImageShowcaseEnum = 'NOT_SET' | 'CHOOSE_ON_PER_IMAGE_BASIS' | 'TURN_OFF_IMAGES' | 'TURN_ON_IMAGES';
+export type PreferencesReminderEnum = 'NEVER' | 'DAYS_1' | 'DAYS_3' | 'DAYS_7' | 'DAYS_14' | 'DAYS_28';
+export type PreferencesResultsEnum = 'RESULTS_20' | 'RESULTS_40' | 'RESULTS_60' | 'RESULTS_80';
+
+/**
+ * User preference settings
+ */
+export interface IPreference {
+  /** ID of the object */
+  id: string;
+  /** Show adult content */
+  adult: boolean;
+  /** Blur adult images */
+  adultBlurImages: boolean;
+  /** Replies to posts bump original post */
+  bubbleReply: boolean;
+  /** Amount of comments per page */
+  comments: PreferencesCommentsEnum;
+  /** Default media tab */
+  defaultMediaTab: PreferencesDefaultMediaTabEnum;
+  /** Time range for default media tab */
+  defaultMediaTabTimeRange: PreferencesTimeRangeEnum;
+  /** Default mods tab */
+  defaultModsTab: PreferencesDefaultModsTabEnum;
+  /** Time range for default mods tab */
+  defaultModsTabTimeRange: PreferencesTimeRangeEnum;
+  /** Default sorting option */
+  defaultOrder: PreferencesDefaultSortEnum;
+  /** Default search type */
+  defaultSearchType: PreferencesSearchTypeEnum;
+  /** Default search view */
+  defaultSearchView: PreferencesDefaultSearchViewEnum;
+  /** Display user activity */
+  disableProfileActivity: boolean;
+  /** Display when user was last active */
+  displayLastActivity: boolean;
+  /** Download location */
+  dlLocation: PreferencesDlLocationEnum;
+  /** Preferred download method */
+  download: PreferencesDownloadMethodEnum;
+  /** Image showcase setting */
+  imageShowcase: PreferencesImageShowcaseEnum;
+  /** If true, this user is blocking content */
+  isBlockingContent: boolean;
+  /** Whether the user has opted in to marketing emails */
+  marketingEmails: boolean;
+  /** Display notifications */
+  notificationsActive: boolean;
+  /** Game specific notifications when visiting game pages */
+  notificationsGameSpecific: boolean;
+  /** Endorsement reminder */
+  reminder: PreferencesReminderEnum;
+  /** Amount of results per page */
+  results: PreferencesResultsEnum;
+  /** Activity about tracked files, images and videos */
+  subfeedsActivityTracked: boolean;
+  /** Activity about a users files, images and videos */
+  subfeedsActivityYour: boolean;
+  /** Author tracked files, images and videos */
+  subfeedsAuthorTracked: boolean;
+  /** Comments about tracked files, images and videos */
+  subfeedsCommentsTracked: boolean;
+  /** Comments about a users files, images and videos */
+  subfeedsCommentsYour: boolean;
+}
+
+export type GraphErrorCode = 'REVISION_INVALID';
+export type GraphErrorAttribute = 'modId' | 'fileId';
+export type GraphErrorItemCode = 'NOT_AVAILABLE' | 'NOT_FOUND' | 'DELETED';
+export type GraphErrorEntity = 'Mod' | 'ModFile';
+export type GraphErrorType = 'LOCATE_ERROR';
+
+export interface IGraphQLError {
+  message: string;
+  extensions?: {
+    attribute?: GraphErrorAttribute;
+    code?: GraphErrorItemCode;
+    entity?: GraphErrorEntity;
+    message?: string;
+    type?: GraphErrorType;
+    value?: any;
+    parameter?: any;
+  }
+}
+
+export type LogLevel = 'info' | 'error';
+export type LogFunc = (level: LogLevel, message: string, meta: any) => void;
+
+export interface IOAuthCredentials {
+  token: string,
+  refreshToken: string,
+  fingerprint: string,
+}
+
+export interface IOAuthConfig {
+  id: string,
+  secret?: string
+}
+
+/**
+ * Sort field options for collection search
+ */
+export type CollectionSortField = 'endorsements' | 'downloads' | 'createdAt' | 'recentRating';
+
+/**
+ * Sort direction options
+ */
+export type SortDirection = 'ASC' | 'DESC';
+
+/**
+ * Filter operator for category name filtering
+ */
+export interface ICategoryNameFilter {
+  op: 'EQUALS' | 'NOT_EQUALS';
+  value: string;
+}
+
+/**
+ * Options for searching collections
+ */
+export interface ICollectionSearchOptions {
+  gameId: string;
+  count?: number;
+  offset?: number;
+  sort?: {
+    field: CollectionSortField;
+    direction: SortDirection;
+  };
+  search?: string;
+  categoryName?: ICategoryNameFilter[];
+  collectionStatuses?: string[];
+  userId?: string;
+  /**
+   * Filter collections by adult content
+   * - true: Only return collections with adult content
+   * - false: Exclude collections with adult content
+   * - undefined: Include both (default, respects user preferences server-side)
+   */
+  adultContent?: boolean;
+}
+
+/**
+ * Result of a collection search
+ */
+export interface ICollectionSearchResult {
+  nodes: Partial<ICollection>[];
+  totalCount: number;
+}

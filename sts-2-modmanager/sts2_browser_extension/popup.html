@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>STS2 Mod Manager</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 320px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: white;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header-left h1 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .header-left p {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .settings-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .settings-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .tab-nav {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .status-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .status-row:last-child {
+      border-bottom: none;
+    }
+
+    .status-label {
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    .status-value {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .status-indicator {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .status-indicator.online {
+      background: #22c55e;
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+    }
+
+    .status-indicator.offline {
+      background: #ef4444;
+    }
+
+    .info-section {
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+
+    .info-section p {
+      font-size: 11px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      margin-top: 8px;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-save {
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+      margin-top: 16px;
+    }
+
+    .btn-save:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+    }
+
+    .loading {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s linear infinite;
+      margin-right: 8px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .error {
+      background: rgba(239, 68, 68, 0.2);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 16px;
+      color: #fca5a5;
+      font-size: 12px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 10px;
+      color: #64748b;
+    }
+
+    /* Settings form */
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+      font-size: 14px;
+    }
+
+    .form-input:focus, .form-select:focus {
+      outline: none;
+      border-color: #4f46e5;
+    }
+
+    .form-select {
+      cursor: pointer;
+    }
+
+    .form-select option {
+      background: #1a1a2e;
+    }
+
+    .form-hint {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 6px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .form-row .form-group {
+      flex: 1;
+    }
+
+    .success-msg {
+      background: rgba(34, 197, 94, 0.2);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 16px;
+      color: #86efac;
+      font-size: 12px;
+      display: none;
+    }
+
+    .success-msg.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <h1>STS2 Mod Manager</h1>
+      <p>Browser Extension</p>
+    </div>
+  </div>
+
+  <div class="tab-nav">
+    <button id="tab-main" class="tab-btn active">Main</button>
+    <button id="tab-settings" class="tab-btn">Settings</button>
+  </div>
+
+  <!-- Main Tab -->
+  <div id="content-main" class="tab-content active">
+    <div id="status-card" class="status-card">
+      <div class="status-row">
+        <span class="status-label">Manager Status</span>
+        <span id="server-status" class="status-value">
+          <span class="status-indicator offline"></span>
+          <span>Checking...</span>
+        </span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Active Downloads</span>
+        <span id="active-downloads" class="status-value">-</span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Installed Mods</span>
+        <span id="installed-mods" class="status-value">-</span>
+      </div>
+    </div>
+
+    <div id="error-section" class="error" style="display: none;">
+      <span id="error-message"></span>
+    </div>
+
+    <div class="info-section">
+      <p>💡 <strong>How to use:</strong><br>
+      1. Open Nexus Mods and find a mod for Slay the Spire 2<br>
+      2. Click the "Download to STS2 Manager" button<br>
+      3. The mod will be sent directly to the manager!</p>
+    </div>
+
+    <button id="refresh-btn" class="btn btn-primary">
+      Check Status
+    </button>
+
+    <button id="open-manager-btn" class="btn btn-secondary">
+      Open STS2 Mod Manager
+    </button>
+
+    <div class="footer">
+      v3.0.6 | STS2-ModManager | No Premium Required
+    </div>
+  </div>
+
+  <!-- Settings Tab -->
+  <div id="content-settings" class="tab-content">
+    <div id="success-msg" class="success-msg">
+      Settings saved successfully!
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" id="label-language">Language / 语言</label>
+      <select id="language-select" class="form-select">
+        <option value="en">English</option>
+        <option value="zh">中文 (简体)</option>
+      </select>
+      <p class="form-hint" id="hint-language">Select the display language</p>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" id="label-port">Port</label>
+        <input type="number" id="port-input" class="form-input" value="8765" min="1024" max="65535">
+      </div>
+    </div>
+    <p class="form-hint" id="hint-port">Local server port (default: 8765)</p>
+
+    <button id="save-settings-btn" class="btn btn-save">
+      Save Settings
+    </button>
+
+    <div class="footer">
+      <button id="reset-settings-btn" style="background:none;border:none;color:#64748b;cursor:pointer;text-decoration:underline;">
+        Reset to Defaults
+      </button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

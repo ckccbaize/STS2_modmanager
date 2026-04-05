@@ -1,0 +1,34 @@
+[paths]
+
+game_path="E:/GAME/Slay the Spire 2old/Slay the Spire 2"
+save_path="C:/Users/guo/AppData/Roaming/slytest"
+temp_mods_path="res://temp_mods"
+backup_path="E:/modmanager_project/sts-2-modmanager/save/back_up"
+
+[settings]
+
+language="zh_CN"
+minimize_to_tray=true
+auto_backup=true
+auto_backup_on_startup=true
+auto_backup_max_count=5
+launch_via_steam=false
+
+[imported_backups]
+
+saves={
+"imported_sts2-save-20260320-195730": "E:/modmanager_project/sts-2-modmanager/save/back_up/steam_sts2-save-20260320-195730_manual_2026-03-24T18-51-30",
+"imported_导出": "E:/modmanager_project/sts-2-modmanager/save/back_up/steam_导出_manual_2026-03-24T18-51-34"
+}
+
+[tags]
+
+data={
+"单人模组": ["cardreplace", "Regent-Ling", "Defect-Leizi", "Ironclad-Chen", "Silent-FroStar"],
+"联机模组": ["cardreplace", "money", "Regent-Ling", "凯尔西"]
+}
+current_tag="单人模组"
+
+[nexus]
+
+api_key="dKi06w5oHQgcQ571jGDucCZsSXVagohX4cmquswGCXkyaSU=--uEFwBallAXeOJisR--UWbh+bZ4OX/uFE1V8NvFHw=="

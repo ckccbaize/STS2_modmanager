@@ -1,0 +1,620 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfjlj0l608unu"]
+
+[ext_resource type="Script" uid="uid://c2g52k86f81hm" path="res://modmanager.gd" id="1_modmanager"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_modmanager")
+
+[node name="LoadingPanel" type="Panel" parent="."]
+visible = false
+z_index = 100
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BgColor" type="ColorRect" parent="LoadingPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.7)
+
+[node name="LoadingVBox" type="VBoxContainer" parent="LoadingPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -50.0
+offset_right = 100.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="LoadingBg" type="ColorRect" parent="LoadingPanel/LoadingVBox"]
+custom_minimum_size = Vector2(200, 20)
+layout_mode = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="LoadingProgress" type="ColorRect" parent="LoadingPanel/LoadingVBox/LoadingBg"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 0
+size_flags_horizontal = 0
+color = Color(0.2, 0.7, 0.3, 1)
+
+[node name="LoadingSpinner" type="ProgressBar" parent="LoadingPanel/LoadingVBox"]
+visible = false
+custom_minimum_size = Vector2(200, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+show_percentage = false
+
+[node name="LoadingLabel" type="Label" parent="LoadingPanel/LoadingVBox"]
+layout_mode = 2
+text = "正在安装模组..."
+horizontal_alignment = 1
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+current_tab = 1
+
+[node name="ModTab" type="Control" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="TopBar" type="HBoxContainer" parent="TabContainer/ModTab"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="SearchEdit" type="LineEdit" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+placeholder_text = "搜索..."
+
+[node name="SearchBtn" type="Button" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+text = "搜索"
+
+[node name="CategoryFilter" type="OptionButton" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+
+[node name="SortOption" type="OptionButton" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+
+[node name="InstallModBtn" type="Button" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+text = "安装"
+
+[node name="UninstallModBtn" type="Button" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+text = "卸载"
+
+[node name="BatchEnableBtn" type="Button" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+text = "启用选中"
+
+[node name="BatchUninstallBtn" type="Button" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+text = "停用选中"
+
+[node name="BatchSelectBtn" type="Button" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+text = "全选"
+
+[node name="BatchDeselectBtn" type="Button" parent="TabContainer/ModTab/TopBar"]
+visible = false
+layout_mode = 2
+
+[node name="RefreshModsBtn" type="Button" parent="TabContainer/ModTab/TopBar"]
+layout_mode = 2
+text = "刷新"
+
+[node name="HSplit" type="HSplitContainer" parent="TabContainer/ModTab"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offset = 50
+
+[node name="LeftPanel" type="VBoxContainer" parent="TabContainer/ModTab/HSplit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ModScroll" type="ScrollContainer" parent="TabContainer/ModTab/HSplit/LeftPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ModList" type="VBoxContainer" parent="TabContainer/ModTab/HSplit/LeftPanel/ModScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DropHint" type="Label" parent="TabContainer/ModTab/HSplit/LeftPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "拖拽ZIP文件到此处"
+horizontal_alignment = 1
+
+[node name="RightPanel" type="VBoxContainer" parent="TabContainer/ModTab/HSplit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ModDetailsPanel" type="PanelContainer" parent="TabContainer/ModTab/HSplit/RightPanel"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DetailsVBox" type="VBoxContainer" parent="TabContainer/ModTab/HSplit/RightPanel/ModDetailsPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NameLabel" type="Label" parent="TabContainer/ModTab/HSplit/RightPanel/ModDetailsPanel/DetailsVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "模组名称"
+
+[node name="AuthorLabel" type="Label" parent="TabContainer/ModTab/HSplit/RightPanel/ModDetailsPanel/DetailsVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "作者: "
+
+[node name="VersionLabel" type="Label" parent="TabContainer/ModTab/HSplit/RightPanel/ModDetailsPanel/DetailsVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "版本: "
+
+[node name="SourceLabel" type="Label" parent="TabContainer/ModTab/HSplit/RightPanel/ModDetailsPanel/DetailsVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "来源: "
+
+[node name="DepLabel" type="Label" parent="TabContainer/ModTab/HSplit/RightPanel/ModDetailsPanel/DetailsVBox"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+text = "依赖: "
+
+[node name="TypeLabel" type="Label" parent="TabContainer/ModTab/HSplit/RightPanel/ModDetailsPanel/DetailsVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "类型: "
+
+[node name="DescLabel" type="Label" parent="TabContainer/ModTab/HSplit/RightPanel/ModDetailsPanel/DetailsVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "描述: "
+autowrap_mode = 2
+
+[node name="SaveTab" type="Control" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="TopBar" type="HBoxContainer" parent="TabContainer/SaveTab"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+anchor_right = 1.0
+offset_bottom = 8.0
+
+[node name="ImportSaveBtn" type="Button" parent="TabContainer/SaveTab/TopBar"]
+layout_mode = 2
+text = "导入"
+
+[node name="ExportSaveBtn" type="Button" parent="TabContainer/SaveTab/TopBar"]
+layout_mode = 2
+text = "导出"
+
+[node name="BackupSaveBtn" type="Button" parent="TabContainer/SaveTab/TopBar"]
+layout_mode = 2
+text = "备份"
+
+[node name="RestoreSaveBtn" type="Button" parent="TabContainer/SaveTab/TopBar"]
+layout_mode = 2
+text = "恢复"
+
+[node name="OverwriteSaveBtn" type="Button" parent="TabContainer/SaveTab/TopBar"]
+layout_mode = 2
+text = "覆盖"
+
+[node name="SaveContainer" type="HBoxContainer" parent="TabContainer/SaveTab"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 45.0
+
+[node name="LeftPanelWrapper" type="HBoxContainer" parent="TabContainer/SaveTab/SaveContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="LeftPanelList" type="VBoxContainer" parent="TabContainer/SaveTab/SaveContainer/LeftPanelWrapper"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SaveScroll" type="ScrollContainer" parent="TabContainer/SaveTab/SaveContainer/LeftPanelWrapper/LeftPanelList"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SaveList" type="VBoxContainer" parent="TabContainer/SaveTab/SaveContainer/LeftPanelWrapper/LeftPanelList/SaveScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CollapseBtn" type="Button" parent="TabContainer/SaveTab/SaveContainer/LeftPanelWrapper"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+text = "<"
+
+[node name="RightPanel" type="VBoxContainer" parent="TabContainer/SaveTab/SaveContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SaveDetailsPanel" type="PanelContainer" parent="TabContainer/SaveTab/SaveContainer/RightPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DetailsVBox" type="VBoxContainer" parent="TabContainer/SaveTab/SaveContainer/RightPanel/SaveDetailsPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ProfileSelector" type="OptionButton" parent="TabContainer/SaveTab/SaveContainer/RightPanel/SaveDetailsPanel/DetailsVBox"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="TabContainer/SaveTab/SaveContainer/RightPanel/SaveDetailsPanel/DetailsVBox"]
+layout_mode = 2
+text = "存档名称"
+
+[node name="DateLabel" type="Label" parent="TabContainer/SaveTab/SaveContainer/RightPanel/SaveDetailsPanel/DetailsVBox"]
+layout_mode = 2
+text = "日期: -"
+
+[node name="SizeLabel" type="Label" parent="TabContainer/SaveTab/SaveContainer/RightPanel/SaveDetailsPanel/DetailsVBox"]
+layout_mode = 2
+text = "大小: -"
+
+[node name="TypeLabel" type="Label" parent="TabContainer/SaveTab/SaveContainer/RightPanel/SaveDetailsPanel/DetailsVBox"]
+layout_mode = 2
+text = "类型: -"
+
+[node name="CharStatsScroll" type="ScrollContainer" parent="TabContainer/SaveTab/SaveContainer/RightPanel/SaveDetailsPanel/DetailsVBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CharStatsVBox" type="VBoxContainer" parent="TabContainer/SaveTab/SaveContainer/RightPanel/SaveDetailsPanel/DetailsVBox/CharStatsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NexusTab" type="Control" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="NexusModsPanel" type="PanelContainer" parent="TabContainer/NexusTab"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NexusModsUI" type="Control" parent="TabContainer/NexusTab/NexusModsPanel"]
+layout_mode = 2
+
+[node name="DownloadTab" type="Control" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="DownloadPanel" type="PanelContainer" parent="TabContainer/DownloadTab"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DownloadVBox" type="VSplitContainer" parent="TabContainer/DownloadTab/DownloadPanel"]
+layout_mode = 2
+split_offset = 150
+
+[node name="ActiveDownloadsSection" type="VBoxContainer" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="ActiveDownloadsHeader" type="HBoxContainer" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/ActiveDownloadsSection"]
+layout_mode = 2
+
+[node name="ActiveDownloadsLabel" type="Label" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/ActiveDownloadsSection/ActiveDownloadsHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "当前下载"
+
+[node name="OpenFolderBtn" type="Button" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/ActiveDownloadsSection/ActiveDownloadsHeader"]
+layout_mode = 2
+text = "打开文件夹"
+
+[node name="ActiveDownloadsScroll" type="ScrollContainer" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/ActiveDownloadsSection"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="ActiveDownloadsList" type="VBoxContainer" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/ActiveDownloadsSection/ActiveDownloadsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="EmptyLabel" type="Label" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/ActiveDownloadsSection/ActiveDownloadsScroll/ActiveDownloadsList"]
+layout_mode = 2
+text = "暂无下载任务"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HistorySection" type="VBoxContainer" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HistoryHeader" type="HBoxContainer" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/HistorySection"]
+layout_mode = 2
+
+[node name="HistoryLabel" type="Label" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/HistorySection/HistoryHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "下载历史"
+
+[node name="ClearHistoryBtn" type="Button" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/HistorySection/HistoryHeader"]
+layout_mode = 2
+text = "清空历史"
+
+[node name="HistoryScroll" type="ScrollContainer" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/HistorySection"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HistoryList" type="VBoxContainer" parent="TabContainer/DownloadTab/DownloadPanel/DownloadVBox/HistorySection/HistoryScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SettingsTab" type="Control" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="SettingsScroll" type="ScrollContainer" parent="TabContainer/SettingsTab"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsVBox" type="VBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PathsSection" type="VBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+
+[node name="GamePathLabel" type="Label" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection"]
+layout_mode = 2
+text = "游戏路径"
+
+[node name="GamePathRow" type="HBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection"]
+layout_mode = 2
+
+[node name="GamePathEdit" type="LineEdit" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection/GamePathRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GamePathBrowseBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection/GamePathRow"]
+layout_mode = 2
+text = "浏览"
+
+[node name="GamePathDetectBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection/GamePathRow"]
+layout_mode = 2
+text = "自动检测"
+
+[node name="GamePathTooltipBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection/GamePathRow"]
+layout_mode = 2
+tooltip_text = "选择SlayTheSpire2.exe文件，程序会自动提取游戏根目录"
+text = "?"
+
+[node name="SavePathLabel" type="Label" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection"]
+layout_mode = 2
+text = "存档路径"
+
+[node name="SavePathRow" type="HBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection"]
+layout_mode = 2
+
+[node name="SavePathEdit" type="LineEdit" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection/SavePathRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SavePathBrowseBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection/SavePathRow"]
+layout_mode = 2
+text = "浏览"
+
+[node name="SavePathDetectBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection/SavePathRow"]
+layout_mode = 2
+text = "自动检测"
+
+[node name="SavePathTooltipBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/PathsSection/SavePathRow"]
+layout_mode = 2
+tooltip_text = "选择存档所在文件夹的上一级目录"
+text = "?"
+
+[node name="LanguageSection" type="VBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+
+[node name="LanguageLabel" type="Label" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/LanguageSection"]
+layout_mode = 2
+text = "语言"
+
+[node name="LanguageOption" type="OptionButton" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/LanguageSection"]
+layout_mode = 2
+
+[node name="Separator1" type="HSeparator" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+
+[node name="BackupSection" type="VBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+
+[node name="AutoBackupCheck" type="CheckBox" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/BackupSection"]
+layout_mode = 2
+text = "防误删备份"
+
+[node name="AutoBackupOnStartupCheck" type="CheckBox" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/BackupSection"]
+layout_mode = 2
+text = "启动时自动备份"
+
+[node name="AutoBackupMaxCountHBox" type="HBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/BackupSection"]
+layout_mode = 2
+
+[node name="AutoBackupMaxCountLabel" type="Label" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/BackupSection/AutoBackupMaxCountHBox"]
+layout_mode = 2
+text = "自动备份保留数量"
+
+[node name="AutoBackupMaxCountSpinBox" type="SpinBox" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/BackupSection/AutoBackupMaxCountHBox"]
+layout_mode = 2
+min_value = 1.0
+max_value = 50.0
+value = 5.0
+
+[node name="ClearBackupsBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/BackupSection"]
+layout_mode = 2
+text = "清除所有备份"
+
+[node name="Separator2" type="HSeparator" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+
+[node name="SaveSettingsBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+text = "保存设置"
+
+[node name="Separator3" type="HSeparator" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+
+[node name="StorageSection" type="VBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+
+[node name="TempModsPathHeader" type="HBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection"]
+layout_mode = 2
+
+[node name="TempModsPathLabel" type="Label" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection/TempModsPathHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "模组存储文件夹"
+
+[node name="TempModsPathTooltipBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection/TempModsPathHeader"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+tooltip_text = "不建议修改，修改可能导致模组管理异常"
+text = "?"
+
+[node name="TempModsPathRow" type="HBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection"]
+layout_mode = 2
+
+[node name="TempModsPathEdit" type="LineEdit" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection/TempModsPathRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TempModsPathBrowseBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection/TempModsPathRow"]
+layout_mode = 2
+text = "浏览"
+
+[node name="BackupPathHeader" type="HBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection"]
+layout_mode = 2
+
+[node name="BackupPathLabel" type="Label" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection/BackupPathHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "存档备份文件夹"
+
+[node name="BackupPathTooltipBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection/BackupPathHeader"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+tooltip_text = "不建议修改，修改可能导致备份功能异常"
+text = "?"
+
+[node name="BackupPathRow" type="HBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection"]
+layout_mode = 2
+
+[node name="BackupPathEdit" type="LineEdit" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection/BackupPathRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackupPathBrowseBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/StorageSection/BackupPathRow"]
+layout_mode = 2
+text = "浏览"
+
+[node name="NexusAPISection" type="VBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2
+
+[node name="NexusAPILabel" type="Label" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/NexusAPISection"]
+layout_mode = 2
+text = "Nexus Mods API"
+
+[node name="NexusAPIKeyRow" type="HBoxContainer" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/NexusAPISection"]
+layout_mode = 2
+
+[node name="NexusAPIKeyEdit" type="LineEdit" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/NexusAPISection/NexusAPIKeyRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "输入Nexus Mods API Key"
+
+[node name="NexusValidateBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/NexusAPISection/NexusAPIKeyRow"]
+layout_mode = 2
+text = "验证"
+
+[node name="NexusHelpBtn" type="Button" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/NexusAPISection/NexusAPIKeyRow"]
+layout_mode = 2
+text = "?"
+
+[node name="NexusStatusLabel" type="Label" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox/NexusAPISection"]
+layout_mode = 2
+text = "状态: 未验证"
+
+[node name="Separator4" type="HSeparator" parent="TabContainer/SettingsTab/SettingsScroll/SettingsVBox"]
+layout_mode = 2

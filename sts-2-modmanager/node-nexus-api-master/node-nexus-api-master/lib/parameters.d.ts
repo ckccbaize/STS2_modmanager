@@ -1,0 +1,15 @@
+export declare const QUOTA_RATE_MS: number;
+export declare const QUOTA_MAX: number;
+export declare const QUOTA_MAX_PREMIUM: number;
+export declare const DEFAULT_TIMEOUT_MS: number;
+export declare const DELAY_AFTER_429_MS: number;
+export declare const BASE_URL: string;
+export declare const API_URL: string;
+export declare const GRAPHQL_URL: string;
+export declare const API_DEV_URL: string;
+export declare const APIKEY_DEV: string;
+export declare const USER_SERVICE_API_URL: string;
+export declare const PROTOCOL_VERSION: string;
+export declare const MAX_FILE_SIZE: number;
+export declare const MAX_JWT_REFRESH_TRIES: number;
+export declare const MAX_BATCH_SIZE: number;

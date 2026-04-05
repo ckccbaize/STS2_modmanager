@@ -1,0 +1,1516 @@
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/lemonSpire2.zip
+=== 安装结果 === { "success": true, "message": "模组安装成功: Lemon Spire 2", "mod_info": { "id": "lemonSpire2", "name": "Lemon Spire 2", "author": "freude916", "description": "A collection of multiplayer QoL: Chat, State, Damage Tracker", "version": "v0.6.1", "has_pck": false, "has_dll": false, "dependencies": ["BaseLib"], "affects_gameplay": true, "path": "res://temp_mods/_temp_extract" }, "installed_count": 1 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/lemonSpire2.zip
+=== 安装结果 === { "success": true, "message": "模组安装成功: Lemon Spire 2", "mod_info": { "id": "lemonSpire2", "name": "Lemon Spire 2", "author": "freude916", "description": "A collection of multiplayer QoL: Chat, State, Damage Tracker", "version": "v0.6.1", "has_pck": false, "has_dll": false, "dependencies": ["BaseLib"], "affects_gameplay": true, "path": "res://temp_mods/_temp_extract" }, "installed_count": 1 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/lemonSpire2.zip
+=== 安装结果 === { "success": true, "message": "模组安装成功: Lemon Spire 2", "mod_info": { "id": "lemonSpire2", "name": "Lemon Spire 2", "author": "freude916", "description": "A collection of multiplayer QoL: Chat, State, Damage Tracker", "version": "v0.6.1", "has_pck": true, "has_dll": true, "dependencies": ["BaseLib"], "affects_gameplay": true, "path": "res://temp_mods/_temp_extract/lemonSpire2" }, "installed_count": 1 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/zhenhe.zip
+=== 安装结果 === { "success": true, "message": "模组安装成功: CardReplaceMod1", "mod_info": { "id": "CardReplaceMod1", "name": "CardReplaceMod1", "author": "none", "description": "none", "version": "1.8.4", "has_pck": true, "has_dll": false, "dependencies": [], "affects_gameplay": false, "path": "res://temp_mods/_temp_extract/cardreplace" }, "installed_count": 1 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/zhenhe.zip
+=== 安装结果 === { "success": true, "message": "成功安装 2 个模组", "mod_info": {  }, "installed_count": 2 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/lemonSpire2.zip
+=== 安装结果 === { "success": true, "message": "模组安装成功: Lemon Spire 2", "mod_info": { "id": "lemonSpire2", "name": "Lemon Spire 2", "author": "freude916121221213234345356", "description": "A collection of multiplayer QoL: Chat, State, Damage Tracker", "version": "v0.6.1", "has_pck": true, "has_dll": true, "dependencies": ["BaseLib"], "affects_gameplay": true, "path": "res://temp_mods/_temp_extract/lemonSpire2" }, "installed_count": 1 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/zhenhe.zip
+=== 安装结果 === { "success": true, "message": "成功安装 2 个模组", "mod_info": {  }, "installed_count": 2 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/zhenhe.zip
+=== 安装结果 === { "success": true, "message": "成功安装 2 个模组", "mod_info": {  }, "installed_count": 2 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/lemonSpire2.zip
+=== 安装结果 === { "success": true, "message": "模组安装成功: Lemon Spire 2", "mod_info": { "id": "lemonSpire2", "name": "Lemon Spire 2", "author": "freude916121221213234345356", "description": "A collection of multiplayer QoL: Chat, State, Damage Tracker", "version": "v0.6.1", "has_pck": true, "has_dll": true, "dependencies": ["BaseLib"], "affects_gameplay": true, "path": "res://temp_mods/_temp_extract/lemonSpire2" }, "installed_count": 1 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/zhenhe.zip
+=== 安装结果 === { "success": true, "message": "成功安装 2 个模组", "mod_info": {  }, "installed_count": 2 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/zhenhe.zip
+=== 安装结果 === { "success": true, "message": "成功安装 2 个模组", "mod_info": {  }, "installed_count": 2 }
+=== _on_mod_file_selected === path: E:/modmanager_project/sts-2-modmanager/mods/zhenhe.zip
+=== 安装结果 === { "success": true, "message": "成功安装 2 个模组", "mod_info": {  }, "installed_count": 2 }
+2026-03-27 20:29:52 === APP START ===
+2026-03-27 20:29:52 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:29:52 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:29:52 Log path: res://debug.log
+2026-03-27 20:34:04 === APP START ===
+2026-03-27 20:34:04 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:34:04 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:34:04 Log path: res://debug.log
+2026-03-27 20:34:39 === APP START ===
+2026-03-27 20:34:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:34:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:34:39 Log path: res://debug.log
+2026-03-27 20:36:28 === APP START ===
+2026-03-27 20:36:28 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:36:28 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:36:28 Log path: res://debug.log
+2026-03-27 20:38:18 === APP START ===
+2026-03-27 20:38:18 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:38:18 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:38:18 Log path: res://debug.log
+2026-03-27 20:40:56 === APP START ===
+2026-03-27 20:40:56 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:40:56 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:40:56 Log path: res://debug.log
+2026-03-27 20:44:28 === APP START ===
+2026-03-27 20:44:28 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:44:28 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:44:28 Log path: res://debug.log
+2026-03-27 20:47:39 === APP START ===
+2026-03-27 20:47:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:47:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:47:39 Log path: res://debug.log
+2026-03-27 20:49:50 === APP START ===
+2026-03-27 20:49:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:49:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:49:50 Log path: res://debug.log
+2026-03-27 20:53:09 === APP START ===
+2026-03-27 20:53:09 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:53:09 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:53:09 Log path: res://debug.log
+2026-03-27 20:58:28 === APP START ===
+2026-03-27 20:58:28 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 20:58:28 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 20:58:28 Log path: res://debug.log
+2026-03-27 21:01:26 === APP START ===
+2026-03-27 21:01:26 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 21:01:26 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 21:01:26 Log path: res://debug.log
+2026-03-27 21:04:58 === APP START ===
+2026-03-27 21:04:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 21:04:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 21:04:58 Log path: res://debug.log
+2026-03-27 21:14:02 === APP START ===
+2026-03-27 21:14:02 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 21:14:02 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 21:14:02 Log path: res://debug.log
+2026-03-27 21:17:23 === APP START ===
+2026-03-27 21:17:23 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-27 21:17:23 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-27 21:17:23 Log path: res://debug.log
+2026-03-28 10:03:53 === APP START ===
+2026-03-28 10:03:53 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:03:53 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:03:53 Log path: res://debug.log
+2026-03-28 10:23:38 === APP START ===
+2026-03-28 10:23:38 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:23:38 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:23:38 Log path: res://debug.log
+2026-03-28 10:31:33 === APP START ===
+2026-03-28 10:31:33 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:31:33 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:31:33 Log path: res://debug.log
+2026-03-28 10:37:10 === APP START ===
+2026-03-28 10:37:10 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:37:10 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:37:10 Log path: res://debug.log
+2026-03-28 10:39:03 === APP START ===
+2026-03-28 10:39:03 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:39:03 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:39:03 Log path: res://debug.log
+2026-03-28 10:41:11 === APP START ===
+2026-03-28 10:41:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:41:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:41:11 Log path: res://debug.log
+2026-03-28 10:50:43 === APP START ===
+2026-03-28 10:50:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:50:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:50:43 Log path: res://debug.log
+2026-03-28 10:52:10 === APP START ===
+2026-03-28 10:52:10 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:52:10 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:52:10 Log path: res://debug.log
+2026-03-28 10:57:41 === APP START ===
+2026-03-28 10:57:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 10:57:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 10:57:41 Log path: res://debug.log
+2026-03-28 11:36:08 === APP START ===
+2026-03-28 11:36:08 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 11:36:08 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 11:36:08 Log path: res://debug.log
+2026-03-28 11:45:10 === APP START ===
+2026-03-28 11:45:10 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 11:45:10 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 11:45:10 Log path: res://debug.log
+2026-03-28 11:51:19 === APP START ===
+2026-03-28 11:51:19 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 11:51:19 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 11:51:19 Log path: res://debug.log
+2026-03-28 11:55:37 === APP START ===
+2026-03-28 11:55:37 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 11:55:37 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 11:55:37 Log path: res://debug.log
+2026-03-28 11:58:50 === APP START ===
+2026-03-28 11:58:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 11:58:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 11:58:50 Log path: res://debug.log
+2026-03-28 12:16:34 === APP START ===
+2026-03-28 12:16:34 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 12:16:34 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 12:16:34 Log path: res://debug.log
+2026-03-28 12:20:55 === APP START ===
+2026-03-28 12:20:55 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 12:20:55 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 12:20:55 Log path: res://debug.log
+2026-03-28 13:19:23 === APP START ===
+2026-03-28 13:19:23 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 13:19:23 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 13:19:23 Log path: res://debug.log
+2026-03-28 13:32:16 === APP START ===
+2026-03-28 13:32:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 13:32:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 13:32:16 Log path: res://debug.log
+2026-03-28 13:36:40 === APP START ===
+2026-03-28 13:36:40 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 13:36:40 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 13:36:40 Log path: res://debug.log
+2026-03-28 13:55:45 === APP START ===
+2026-03-28 13:55:45 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 13:55:45 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 13:55:45 Log path: res://debug.log
+2026-03-28 13:55:58 === APP START ===
+2026-03-28 13:55:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 13:55:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 13:55:58 Log path: res://debug.log
+2026-03-28 14:30:46 === APP START ===
+2026-03-28 14:30:46 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 14:30:46 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 14:30:46 Log path: res://debug.log
+2026-03-28 14:41:41 === APP START ===
+2026-03-28 14:41:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 14:41:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 14:41:41 Log path: res://debug.log
+2026-03-28 15:33:25 === APP START ===
+2026-03-28 15:33:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 15:33:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 15:33:25 Log path: res://debug.log
+2026-03-28 15:44:01 === APP START ===
+2026-03-28 15:44:01 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 15:44:01 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 15:44:01 Log path: res://debug.log
+2026-03-28 15:48:45 === APP START ===
+2026-03-28 15:48:45 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 15:48:45 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 15:48:45 Log path: res://debug.log
+2026-03-28 16:21:06 === APP START ===
+2026-03-28 16:21:06 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:21:06 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:21:06 Log path: res://debug.log
+2026-03-28 16:23:42 === APP START ===
+2026-03-28 16:23:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:23:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:23:42 Log path: res://debug.log
+2026-03-28 16:26:13 === APP START ===
+2026-03-28 16:26:13 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:26:13 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:26:13 Log path: res://debug.log
+2026-03-28 16:32:42 === APP START ===
+2026-03-28 16:32:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:32:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:32:42 Log path: res://debug.log
+2026-03-28 16:33:04 === APP START ===
+2026-03-28 16:33:04 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:33:04 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:33:04 Log path: res://debug.log
+2026-03-28 16:36:54 === APP START ===
+2026-03-28 16:36:54 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:36:54 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:36:54 Log path: res://debug.log
+2026-03-28 16:37:09 === APP START ===
+2026-03-28 16:37:09 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:37:09 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:37:09 Log path: res://debug.log
+2026-03-28 16:44:04 === APP START ===
+2026-03-28 16:44:04 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:44:04 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:44:04 Log path: res://debug.log
+2026-03-28 16:46:37 === APP START ===
+2026-03-28 16:46:37 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:46:37 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:46:37 Log path: res://debug.log
+2026-03-28 16:58:01 === APP START ===
+2026-03-28 16:58:01 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 16:58:01 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 16:58:01 Log path: res://debug.log
+2026-03-28 17:05:53 === APP START ===
+2026-03-28 17:05:53 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:05:53 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:05:53 Log path: res://debug.log
+2026-03-28 17:14:50 === APP START ===
+2026-03-28 17:14:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:14:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:14:50 Log path: res://debug.log
+2026-03-28 17:18:21 === APP START ===
+2026-03-28 17:18:21 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:18:21 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:18:21 Log path: res://debug.log
+2026-03-28 17:20:58 === APP START ===
+2026-03-28 17:20:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:20:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:20:58 Log path: res://debug.log
+2026-03-28 17:37:07 === APP START ===
+2026-03-28 17:37:07 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:37:07 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:37:07 Log path: res://debug.log
+2026-03-28 17:40:40 === APP START ===
+2026-03-28 17:40:40 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:40:40 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:40:40 Log path: res://debug.log
+2026-03-28 17:44:01 === APP START ===
+2026-03-28 17:44:01 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:44:01 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:44:01 Log path: res://debug.log
+2026-03-28 17:45:50 === APP START ===
+2026-03-28 17:45:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:45:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:45:50 Log path: res://debug.log
+2026-03-28 17:46:39 === APP START ===
+2026-03-28 17:46:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:46:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:46:39 Log path: res://debug.log
+2026-03-28 17:47:25 === APP START ===
+2026-03-28 17:47:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:47:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:47:25 Log path: res://debug.log
+2026-03-28 17:55:25 === APP START ===
+2026-03-28 17:55:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 17:55:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 17:55:25 Log path: res://debug.log
+2026-03-28 18:02:54 === APP START ===
+2026-03-28 18:02:54 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 18:02:54 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 18:02:54 Log path: res://debug.log
+2026-03-28 18:39:33 === APP START ===
+2026-03-28 18:39:33 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 18:39:33 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 18:39:33 Log path: res://debug.log
+2026-03-28 18:50:41 === APP START ===
+2026-03-28 18:50:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 18:50:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 18:50:41 Log path: res://debug.log
+2026-03-28 18:55:39 === APP START ===
+2026-03-28 18:55:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 18:55:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 18:55:39 Log path: res://debug.log
+2026-03-28 18:58:33 === APP START ===
+2026-03-28 18:58:33 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 18:58:33 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 18:58:33 Log path: res://debug.log
+2026-03-28 19:01:18 === APP START ===
+2026-03-28 19:01:18 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 19:01:18 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 19:01:18 Log path: res://debug.log
+2026-03-28 19:17:25 === APP START ===
+2026-03-28 19:17:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 19:17:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 19:17:25 Log path: res://debug.log
+2026-03-28 19:22:02 === APP START ===
+2026-03-28 19:22:02 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 19:22:02 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 19:22:02 Log path: res://debug.log
+2026-03-28 19:28:45 === APP START ===
+2026-03-28 19:28:45 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 19:28:45 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 19:28:45 Log path: res://debug.log
+2026-03-28 20:12:22 === APP START ===
+2026-03-28 20:12:22 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 20:12:22 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 20:12:22 Log path: res://debug.log
+2026-03-28 20:19:58 === APP START ===
+2026-03-28 20:19:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 20:19:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 20:19:58 Log path: res://debug.log
+2026-03-28 20:27:50 === APP START ===
+2026-03-28 20:27:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 20:27:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 20:27:50 Log path: res://debug.log
+2026-03-28 20:37:40 === APP START ===
+2026-03-28 20:37:40 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 20:37:40 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 20:37:40 Log path: res://debug.log
+2026-03-28 21:01:56 === APP START ===
+2026-03-28 21:01:56 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:01:56 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:01:56 Log path: res://debug.log
+2026-03-28 21:11:17 === APP START ===
+2026-03-28 21:11:17 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:11:17 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:11:17 Log path: res://debug.log
+2026-03-28 21:13:19 === APP START ===
+2026-03-28 21:13:19 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:13:19 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:13:19 Log path: res://debug.log
+2026-03-28 21:15:08 === APP START ===
+2026-03-28 21:15:08 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:15:08 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:15:08 Log path: res://debug.log
+2026-03-28 21:19:32 === APP START ===
+2026-03-28 21:19:32 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:19:32 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:19:32 Log path: res://debug.log
+2026-03-28 21:21:09 === APP START ===
+2026-03-28 21:21:09 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:21:09 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:21:09 Log path: res://debug.log
+2026-03-28 21:26:50 === APP START ===
+2026-03-28 21:26:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:26:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:26:50 Log path: res://debug.log
+2026-03-28 21:31:23 === APP START ===
+2026-03-28 21:31:23 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:31:23 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:31:23 Log path: res://debug.log
+2026-03-28 21:34:01 === APP START ===
+2026-03-28 21:34:01 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:34:01 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:34:01 Log path: res://debug.log
+2026-03-28 21:35:54 === APP START ===
+2026-03-28 21:35:54 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:35:54 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:35:54 Log path: res://debug.log
+2026-03-28 21:37:04 === APP START ===
+2026-03-28 21:37:04 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:37:04 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:37:04 Log path: res://debug.log
+2026-03-28 21:39:41 === APP START ===
+2026-03-28 21:39:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:39:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:39:41 Log path: res://debug.log
+2026-03-28 21:40:19 === APP START ===
+2026-03-28 21:40:19 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:40:19 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:40:19 Log path: res://debug.log
+2026-03-28 21:41:13 === APP START ===
+2026-03-28 21:41:13 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:41:13 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:41:13 Log path: res://debug.log
+2026-03-28 21:47:50 === APP START ===
+2026-03-28 21:47:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 21:47:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 21:47:50 Log path: res://debug.log
+2026-03-28 22:29:27 === APP START ===
+2026-03-28 22:29:27 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:29:27 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:29:27 Log path: res://debug.log
+2026-03-28 22:31:40 === APP START ===
+2026-03-28 22:31:40 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:31:40 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:31:40 Log path: res://debug.log
+2026-03-28 22:37:03 === APP START ===
+2026-03-28 22:37:03 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:37:03 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:37:03 Log path: res://debug.log
+2026-03-28 22:42:44 === APP START ===
+2026-03-28 22:42:44 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:42:44 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:42:44 Log path: res://debug.log
+2026-03-28 22:45:08 === APP START ===
+2026-03-28 22:45:08 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:45:08 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:45:08 Log path: res://debug.log
+2026-03-28 22:46:15 === APP START ===
+2026-03-28 22:46:15 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:46:15 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:46:15 Log path: res://debug.log
+2026-03-28 22:47:35 === APP START ===
+2026-03-28 22:47:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:47:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:47:35 Log path: res://debug.log
+2026-03-28 22:50:42 === APP START ===
+2026-03-28 22:50:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:50:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:50:42 Log path: res://debug.log
+2026-03-28 22:51:38 === APP START ===
+2026-03-28 22:51:38 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:51:38 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:51:38 Log path: res://debug.log
+2026-03-28 22:55:18 === APP START ===
+2026-03-28 22:55:18 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:55:18 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:55:18 Log path: res://debug.log
+2026-03-28 22:57:38 === APP START ===
+2026-03-28 22:57:38 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-28 22:57:38 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-28 22:57:38 Log path: res://debug.log
+2026-03-29 13:39:04 === APP START ===
+2026-03-29 13:39:04 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 13:39:04 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 13:39:04 Log path: res://debug.log
+2026-03-29 13:51:45 === APP START ===
+2026-03-29 13:51:45 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 13:51:45 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 13:51:45 Log path: res://debug.log
+2026-03-29 13:58:25 === APP START ===
+2026-03-29 13:58:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 13:58:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 13:58:25 Log path: res://debug.log
+2026-03-29 13:59:14 === APP START ===
+2026-03-29 13:59:14 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 13:59:14 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 13:59:14 Log path: res://debug.log
+2026-03-29 14:03:38 === APP START ===
+2026-03-29 14:03:38 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:03:38 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:03:38 Log path: res://debug.log
+2026-03-29 14:05:12 === APP START ===
+2026-03-29 14:05:12 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:05:12 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:05:12 Log path: res://debug.log
+2026-03-29 14:07:51 === APP START ===
+2026-03-29 14:07:51 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:07:51 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:07:51 Log path: res://debug.log
+2026-03-29 14:23:16 === APP START ===
+2026-03-29 14:23:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:23:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:23:16 Log path: res://debug.log
+2026-03-29 14:28:23 === APP START ===
+2026-03-29 14:28:23 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:28:23 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:28:23 Log path: res://debug.log
+2026-03-29 14:36:43 === APP START ===
+2026-03-29 14:36:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:36:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:36:43 Log path: res://debug.log
+2026-03-29 14:43:34 === APP START ===
+2026-03-29 14:43:34 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:43:34 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:43:34 Log path: res://debug.log
+2026-03-29 14:52:42 === APP START ===
+2026-03-29 14:52:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:52:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:52:42 Log path: res://debug.log
+2026-03-29 14:57:30 === APP START ===
+2026-03-29 14:57:30 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 14:57:30 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 14:57:30 Log path: res://debug.log
+2026-03-29 15:01:02 === APP START ===
+2026-03-29 15:01:02 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:01:02 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:01:02 Log path: res://debug.log
+2026-03-29 15:05:21 === APP START ===
+2026-03-29 15:05:21 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:05:21 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:05:21 Log path: res://debug.log
+2026-03-29 15:08:19 === APP START ===
+2026-03-29 15:08:19 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:08:19 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:08:19 Log path: res://debug.log
+2026-03-29 15:11:22 === APP START ===
+2026-03-29 15:11:22 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:11:22 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:11:22 Log path: res://debug.log
+2026-03-29 15:13:35 === APP START ===
+2026-03-29 15:13:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:13:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:13:35 Log path: res://debug.log
+2026-03-29 15:17:04 === APP START ===
+2026-03-29 15:17:04 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:17:04 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:17:04 Log path: res://debug.log
+2026-03-29 15:21:41 === APP START ===
+2026-03-29 15:21:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:21:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:21:41 Log path: res://debug.log
+2026-03-29 15:24:42 === APP START ===
+2026-03-29 15:24:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:24:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:24:42 Log path: res://debug.log
+2026-03-29 15:25:16 === APP START ===
+2026-03-29 15:25:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:25:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:25:16 Log path: res://debug.log
+2026-03-29 15:25:32 === APP START ===
+2026-03-29 15:25:32 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:25:32 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:25:32 Log path: res://debug.log
+2026-03-29 15:28:31 === APP START ===
+2026-03-29 15:28:31 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:28:31 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:28:31 Log path: res://debug.log
+2026-03-29 15:29:09 === APP START ===
+2026-03-29 15:29:09 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:29:09 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:29:09 Log path: res://debug.log
+2026-03-29 15:30:16 === APP START ===
+2026-03-29 15:30:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:30:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:30:16 Log path: res://debug.log
+2026-03-29 15:31:07 === APP START ===
+2026-03-29 15:31:07 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:31:07 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:31:07 Log path: res://debug.log
+2026-03-29 15:34:38 === APP START ===
+2026-03-29 15:34:38 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:34:38 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:34:38 Log path: res://debug.log
+2026-03-29 15:35:02 === APP START ===
+2026-03-29 15:35:02 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:35:02 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:35:02 Log path: res://debug.log
+2026-03-29 15:36:37 === APP START ===
+2026-03-29 15:36:37 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:36:37 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:36:37 Log path: res://debug.log
+2026-03-29 15:47:34 === APP START ===
+2026-03-29 15:47:34 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:47:34 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:47:34 Log path: res://debug.log
+2026-03-29 15:49:47 === APP START ===
+2026-03-29 15:49:47 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:49:47 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:49:47 Log path: res://debug.log
+2026-03-29 15:52:42 === APP START ===
+2026-03-29 15:52:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:52:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:52:42 Log path: res://debug.log
+2026-03-29 15:56:27 === APP START ===
+2026-03-29 15:56:27 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 15:56:27 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 15:56:27 Log path: res://debug.log
+2026-03-29 16:15:24 === APP START ===
+2026-03-29 16:15:24 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 16:15:24 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 16:15:24 Log path: res://debug.log
+2026-03-29 16:21:45 === APP START ===
+2026-03-29 16:21:45 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 16:21:45 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 16:21:45 Log path: res://debug.log
+2026-03-29 16:36:44 === APP START ===
+2026-03-29 16:36:44 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 16:36:44 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 16:36:44 Log path: res://debug.log
+2026-03-29 17:26:43 === APP START ===
+2026-03-29 17:26:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 17:26:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 17:26:43 Log path: res://debug.log
+2026-03-29 17:31:04 === APP START ===
+2026-03-29 17:31:04 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 17:31:04 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 17:31:04 Log path: res://debug.log
+2026-03-29 17:52:57 === APP START ===
+2026-03-29 17:52:57 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 17:52:57 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 17:52:57 Log path: res://debug.log
+2026-03-29 17:55:05 === APP START ===
+2026-03-29 17:55:05 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 17:55:05 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 17:55:05 Log path: res://debug.log
+2026-03-29 17:57:17 === APP START ===
+2026-03-29 17:57:17 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 17:57:17 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 17:57:17 Log path: res://debug.log
+2026-03-29 18:07:44 === APP START ===
+2026-03-29 18:07:44 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 18:07:44 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 18:07:44 Log path: res://debug.log
+2026-03-29 18:14:37 === APP START ===
+2026-03-29 18:14:37 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 18:14:37 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 18:14:37 Log path: res://debug.log
+2026-03-29 18:32:23 === APP START ===
+2026-03-29 18:32:23 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 18:32:23 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 18:32:23 Log path: res://debug.log
+2026-03-29 19:08:35 === APP START ===
+2026-03-29 19:08:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 19:08:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 19:08:35 Log path: res://debug.log
+2026-03-29 19:15:39 === APP START ===
+2026-03-29 19:15:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 19:15:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 19:15:39 Log path: res://debug.log
+2026-03-29 19:19:43 === APP START ===
+2026-03-29 19:19:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 19:19:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 19:19:43 Log path: res://debug.log
+2026-03-29 19:44:23 === APP START ===
+2026-03-29 19:44:23 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 19:44:23 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 19:44:23 Log path: res://debug.log
+2026-03-29 19:56:43 === APP START ===
+2026-03-29 19:56:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 19:56:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 19:56:43 Log path: res://debug.log
+2026-03-29 20:05:42 === APP START ===
+2026-03-29 20:05:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 20:05:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 20:05:42 Log path: res://debug.log
+2026-03-29 20:09:05 === APP START ===
+2026-03-29 20:09:05 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 20:09:05 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 20:09:05 Log path: res://debug.log
+2026-03-29 20:13:52 === APP START ===
+2026-03-29 20:13:52 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 20:13:52 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 20:13:52 Log path: res://debug.log
+2026-03-29 20:34:47 === APP START ===
+2026-03-29 20:34:47 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 20:34:47 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 20:34:47 Log path: res://debug.log
+2026-03-29 20:39:16 === APP START ===
+2026-03-29 20:39:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 20:39:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 20:39:16 Log path: res://debug.log
+2026-03-29 20:49:31 === APP START ===
+2026-03-29 20:49:31 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 20:49:31 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 20:49:31 Log path: res://debug.log
+2026-03-29 20:58:11 === APP START ===
+2026-03-29 20:58:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 20:58:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 20:58:11 Log path: res://debug.log
+2026-03-29 21:10:34 === APP START ===
+2026-03-29 21:10:34 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:10:34 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:10:34 Log path: res://debug.log
+2026-03-29 21:21:06 === APP START ===
+2026-03-29 21:21:06 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:21:06 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:21:06 Log path: res://debug.log
+2026-03-29 21:23:33 === APP START ===
+2026-03-29 21:23:33 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:23:33 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:23:33 Log path: res://debug.log
+2026-03-29 21:28:56 === APP START ===
+2026-03-29 21:28:56 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:28:56 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:28:56 Log path: res://debug.log
+2026-03-29 21:32:22 === APP START ===
+2026-03-29 21:32:22 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:32:22 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:32:22 Log path: res://debug.log
+2026-03-29 21:35:54 === APP START ===
+2026-03-29 21:35:54 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:35:54 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:35:54 Log path: res://debug.log
+2026-03-29 21:38:33 === APP START ===
+2026-03-29 21:38:33 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:38:33 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:38:33 Log path: res://debug.log
+2026-03-29 21:42:46 === APP START ===
+2026-03-29 21:42:46 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:42:46 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:42:46 Log path: res://debug.log
+2026-03-29 21:46:57 === APP START ===
+2026-03-29 21:46:57 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:46:57 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:46:57 Log path: res://debug.log
+2026-03-29 21:50:44 === APP START ===
+2026-03-29 21:50:44 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:50:44 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:50:44 Log path: res://debug.log
+2026-03-29 21:57:06 === APP START ===
+2026-03-29 21:57:06 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 21:57:06 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 21:57:06 Log path: res://debug.log
+2026-03-29 22:02:05 === APP START ===
+2026-03-29 22:02:05 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:02:05 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:02:05 Log path: res://debug.log
+2026-03-29 22:12:12 === APP START ===
+2026-03-29 22:12:12 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:12:12 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:12:12 Log path: res://debug.log
+2026-03-29 22:14:21 === APP START ===
+2026-03-29 22:14:21 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:14:21 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:14:21 Log path: res://debug.log
+2026-03-29 22:20:30 === APP START ===
+2026-03-29 22:20:30 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:20:30 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:20:30 Log path: res://debug.log
+2026-03-29 22:21:44 === APP START ===
+2026-03-29 22:21:44 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:21:44 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:21:44 Log path: res://debug.log
+2026-03-29 22:28:05 === APP START ===
+2026-03-29 22:28:05 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:28:05 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:28:05 Log path: res://debug.log
+2026-03-29 22:31:03 === APP START ===
+2026-03-29 22:31:03 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:31:03 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:31:03 Log path: res://debug.log
+2026-03-29 22:33:09 === APP START ===
+2026-03-29 22:33:09 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:33:09 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:33:09 Log path: res://debug.log
+2026-03-29 22:34:58 === APP START ===
+2026-03-29 22:34:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:34:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:34:58 Log path: res://debug.log
+2026-03-29 22:38:34 === APP START ===
+2026-03-29 22:38:34 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:38:34 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:38:34 Log path: res://debug.log
+2026-03-29 22:41:34 === APP START ===
+2026-03-29 22:41:34 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:41:34 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:41:34 Log path: res://debug.log
+2026-03-29 22:55:57 === APP START ===
+2026-03-29 22:55:57 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 22:55:57 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 22:55:57 Log path: res://debug.log
+2026-03-29 23:01:36 === APP START ===
+2026-03-29 23:01:36 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 23:01:36 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 23:01:36 Log path: res://debug.log
+2026-03-29 23:02:20 === APP START ===
+2026-03-29 23:02:20 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 23:02:20 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 23:02:20 Log path: res://debug.log
+2026-03-29 23:12:35 === APP START ===
+2026-03-29 23:12:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 23:12:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 23:12:35 Log path: res://debug.log
+2026-03-29 23:15:08 === APP START ===
+2026-03-29 23:15:08 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 23:15:08 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 23:15:08 Log path: res://debug.log
+2026-03-29 23:22:12 === APP START ===
+2026-03-29 23:22:12 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 23:22:12 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 23:22:12 Log path: res://debug.log
+2026-03-29 23:24:49 === APP START ===
+2026-03-29 23:24:49 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-29 23:24:49 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-29 23:24:49 Log path: res://debug.log
+2026-03-30 19:21:08 === APP START ===
+2026-03-30 19:21:08 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-30 19:21:08 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-30 19:21:08 Log path: res://debug.log
+2026-03-30 20:34:11 === APP START ===
+2026-03-30 20:34:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-30 20:34:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-30 20:34:11 Log path: res://debug.log
+2026-03-30 20:35:16 === APP START ===
+2026-03-30 20:35:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-30 20:35:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-30 20:35:16 Log path: res://debug.log
+2026-03-30 20:37:32 === APP START ===
+2026-03-30 20:37:32 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-30 20:37:32 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-30 20:37:32 Log path: res://debug.log
+2026-03-30 20:51:16 === APP START ===
+2026-03-30 20:51:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-30 20:51:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-30 20:51:16 Log path: res://debug.log
+2026-03-30 21:23:55 === APP START ===
+2026-03-30 21:23:55 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-30 21:23:55 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-30 21:23:55 Log path: res://debug.log
+2026-03-30 21:54:45 === APP START ===
+2026-03-30 21:54:45 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-30 21:54:45 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-30 21:54:45 Log path: res://debug.log
+2026-03-31 00:11:25 === APP START ===
+2026-03-31 00:11:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 00:11:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 00:11:25 Log path: res://debug.log
+2026-03-31 17:48:20 === APP START ===
+2026-03-31 17:48:20 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 17:48:20 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 17:48:20 Log path: res://debug.log
+2026-03-31 18:18:14 === APP START ===
+2026-03-31 18:18:14 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 18:18:14 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 18:18:14 Log path: res://debug.log
+2026-03-31 18:23:20 === APP START ===
+2026-03-31 18:23:20 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 18:23:20 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 18:23:20 Log path: res://debug.log
+2026-03-31 18:27:48 === APP START ===
+2026-03-31 18:27:48 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 18:27:48 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 18:27:48 Log path: res://debug.log
+2026-03-31 18:55:36 === APP START ===
+2026-03-31 18:55:36 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 18:55:36 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 18:55:36 Log path: res://debug.log
+2026-03-31 18:58:44 === APP START ===
+2026-03-31 18:58:44 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 18:58:44 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 18:58:44 Log path: res://debug.log
+2026-03-31 19:06:51 === APP START ===
+2026-03-31 19:06:51 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 19:06:51 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 19:06:51 Log path: res://debug.log
+2026-03-31 19:27:49 === APP START ===
+2026-03-31 19:27:49 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 19:27:49 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 19:27:49 Log path: res://debug.log
+2026-03-31 19:41:12 === APP START ===
+2026-03-31 19:41:12 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 19:41:12 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 19:41:12 Log path: res://debug.log
+2026-03-31 19:53:47 === APP START ===
+2026-03-31 19:53:47 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 19:53:47 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 19:53:47 Log path: res://debug.log
+2026-03-31 19:59:02 === APP START ===
+2026-03-31 19:59:02 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 19:59:02 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 19:59:02 Log path: res://debug.log
+2026-03-31 20:26:09 === APP START ===
+2026-03-31 20:26:09 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 20:26:09 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 20:26:09 Log path: res://debug.log
+2026-03-31 20:30:42 === APP START ===
+2026-03-31 20:30:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 20:30:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 20:30:42 Log path: res://debug.log
+2026-03-31 21:23:19 === APP START ===
+2026-03-31 21:23:19 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 21:23:19 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 21:23:19 Log path: res://debug.log
+2026-03-31 21:31:04 === APP START ===
+2026-03-31 21:31:04 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 21:31:04 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 21:31:04 Log path: res://debug.log
+2026-03-31 21:35:20 === APP START ===
+2026-03-31 21:35:20 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 21:35:20 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 21:35:20 Log path: res://debug.log
+2026-03-31 21:56:20 === APP START ===
+2026-03-31 21:56:20 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 21:56:20 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 21:56:20 Log path: res://debug.log
+2026-03-31 22:03:51 === APP START ===
+2026-03-31 22:03:51 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 22:03:51 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 22:03:51 Log path: res://debug.log
+2026-03-31 22:26:12 === APP START ===
+2026-03-31 22:26:12 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 22:26:12 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 22:26:12 Log path: res://debug.log
+2026-03-31 22:41:50 === APP START ===
+2026-03-31 22:41:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 22:41:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 22:41:50 Log path: res://debug.log
+2026-03-31 22:52:01 === APP START ===
+2026-03-31 22:52:01 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 22:52:01 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 22:52:01 Log path: res://debug.log
+2026-03-31 23:07:01 === APP START ===
+2026-03-31 23:07:01 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 23:07:01 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 23:07:01 Log path: res://debug.log
+2026-03-31 23:24:48 === APP START ===
+2026-03-31 23:24:48 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 23:24:48 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 23:24:48 Log path: res://debug.log
+2026-03-31 23:29:13 === APP START ===
+2026-03-31 23:29:13 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 23:29:13 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 23:29:13 Log path: res://debug.log
+2026-03-31 23:34:57 === APP START ===
+2026-03-31 23:34:57 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 23:34:57 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 23:34:57 Log path: res://debug.log
+2026-03-31 23:48:42 === APP START ===
+2026-03-31 23:48:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-03-31 23:48:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-03-31 23:48:42 Log path: res://debug.log
+2026-04-01 00:01:08 === APP START ===
+2026-04-01 00:01:08 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 00:01:08 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 00:01:08 Log path: res://debug.log
+2026-04-01 15:52:45 === APP START ===
+2026-04-01 15:52:45 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 15:52:45 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 15:52:45 Log path: res://debug.log
+2026-04-01 16:34:52 === APP START ===
+2026-04-01 16:34:52 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 16:34:52 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 16:34:52 Log path: res://debug.log
+2026-04-01 16:41:47 === APP START ===
+2026-04-01 16:41:47 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 16:41:47 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 16:41:47 Log path: res://debug.log
+2026-04-01 16:58:02 === APP START ===
+2026-04-01 16:58:02 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 16:58:02 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 16:58:02 Log path: res://debug.log
+2026-04-01 16:58:24 === APP START ===
+2026-04-01 16:58:24 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 16:58:24 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 16:58:24 Log path: res://debug.log
+2026-04-01 16:59:10 === APP START ===
+2026-04-01 16:59:10 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 16:59:10 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 16:59:10 Log path: res://debug.log
+2026-04-01 17:02:40 === APP START ===
+2026-04-01 17:02:40 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 17:02:40 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 17:02:40 Log path: res://debug.log
+2026-04-01 17:03:31 === APP START ===
+2026-04-01 17:03:31 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 17:03:31 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 17:03:31 Log path: res://debug.log
+2026-04-01 17:17:39 === APP START ===
+2026-04-01 17:17:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 17:17:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 17:17:39 Log path: res://debug.log
+2026-04-01 17:34:29 === APP START ===
+2026-04-01 17:34:29 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 17:34:29 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 17:34:29 Log path: res://debug.log
+2026-04-01 17:41:57 === APP START ===
+2026-04-01 17:41:57 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 17:41:57 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 17:41:57 Log path: res://debug.log
+2026-04-01 17:45:48 === APP START ===
+2026-04-01 17:45:48 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 17:45:48 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 17:45:48 Log path: res://debug.log
+2026-04-01 17:51:14 === APP START ===
+2026-04-01 17:51:14 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 17:51:14 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 17:51:14 Log path: res://debug.log
+2026-04-01 17:52:50 === APP START ===
+2026-04-01 17:52:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 17:52:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 17:52:50 Log path: res://debug.log
+2026-04-01 18:02:22 === APP START ===
+2026-04-01 18:02:22 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 18:02:22 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 18:02:22 Log path: res://debug.log
+2026-04-01 18:13:35 === APP START ===
+2026-04-01 18:13:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 18:13:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 18:13:35 Log path: res://debug.log
+2026-04-01 18:30:57 === APP START ===
+2026-04-01 18:30:57 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 18:30:57 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 18:30:57 Log path: res://debug.log
+2026-04-01 18:40:43 === APP START ===
+2026-04-01 18:40:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 18:40:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 18:40:43 Log path: res://debug.log
+2026-04-01 18:47:50 === APP START ===
+2026-04-01 18:47:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 18:47:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 18:47:50 Log path: res://debug.log
+2026-04-01 18:58:03 === APP START ===
+2026-04-01 18:58:03 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 18:58:03 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 18:58:03 Log path: res://debug.log
+2026-04-01 19:00:17 === APP START ===
+2026-04-01 19:00:17 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:00:17 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:00:17 Log path: res://debug.log
+2026-04-01 19:04:54 === APP START ===
+2026-04-01 19:04:54 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:04:54 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:04:54 Log path: res://debug.log
+2026-04-01 19:08:23 === APP START ===
+2026-04-01 19:08:23 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:08:23 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:08:23 Log path: res://debug.log
+2026-04-01 19:11:58 === APP START ===
+2026-04-01 19:11:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:11:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:11:58 Log path: res://debug.log
+2026-04-01 19:19:30 === APP START ===
+2026-04-01 19:19:30 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:19:30 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:19:30 Log path: res://debug.log
+2026-04-01 19:22:32 === APP START ===
+2026-04-01 19:22:32 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:22:32 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:22:32 Log path: res://debug.log
+2026-04-01 19:22:43 === APP START ===
+2026-04-01 19:22:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:22:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:22:43 Log path: res://debug.log
+2026-04-01 19:25:28 === APP START ===
+2026-04-01 19:25:28 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:25:28 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:25:28 Log path: res://debug.log
+2026-04-01 19:28:03 === APP START ===
+2026-04-01 19:28:03 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:28:03 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:28:03 Log path: res://debug.log
+2026-04-01 19:32:54 === APP START ===
+2026-04-01 19:32:54 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:32:54 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:32:54 Log path: res://debug.log
+2026-04-01 19:34:40 === APP START ===
+2026-04-01 19:34:40 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:34:40 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:34:40 Log path: res://debug.log
+2026-04-01 19:37:58 === APP START ===
+2026-04-01 19:37:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:37:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:37:58 Log path: res://debug.log
+2026-04-01 19:41:01 === APP START ===
+2026-04-01 19:41:01 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:41:01 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:41:01 Log path: res://debug.log
+2026-04-01 19:53:39 === APP START ===
+2026-04-01 19:53:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 19:53:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 19:53:39 Log path: res://debug.log
+2026-04-01 20:12:49 === APP START ===
+2026-04-01 20:12:49 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 20:12:49 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 20:12:49 Log path: res://debug.log
+2026-04-01 20:20:36 === APP START ===
+2026-04-01 20:20:36 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 20:20:36 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 20:20:36 Log path: res://debug.log
+2026-04-01 20:29:48 === APP START ===
+2026-04-01 20:29:48 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 20:29:48 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 20:29:48 Log path: res://debug.log
+2026-04-01 20:33:47 === APP START ===
+2026-04-01 20:33:47 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 20:33:47 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 20:33:47 Log path: res://debug.log
+2026-04-01 20:36:37 === APP START ===
+2026-04-01 20:36:37 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-01 20:36:37 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-01 20:36:37 Log path: res://debug.log
+2026-04-02 12:37:08 === APP START ===
+2026-04-02 12:37:08 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 12:37:08 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 12:37:08 Log path: res://debug.log
+2026-04-02 12:46:32 === APP START ===
+2026-04-02 12:46:32 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 12:46:32 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 12:46:32 Log path: res://debug.log
+2026-04-02 12:58:39 === APP START ===
+2026-04-02 12:58:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 12:58:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 12:58:39 Log path: res://debug.log
+2026-04-02 13:04:00 === APP START ===
+2026-04-02 13:04:00 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:04:00 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:04:00 Log path: res://debug.log
+2026-04-02 13:05:35 === APP START ===
+2026-04-02 13:05:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:05:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:05:35 Log path: res://debug.log
+2026-04-02 13:09:49 === APP START ===
+2026-04-02 13:09:49 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:09:49 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:09:49 Log path: res://debug.log
+2026-04-02 13:12:18 === APP START ===
+2026-04-02 13:12:18 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:12:18 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:12:18 Log path: res://debug.log
+2026-04-02 13:13:35 === APP START ===
+2026-04-02 13:13:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:13:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:13:35 Log path: res://debug.log
+2026-04-02 13:18:48 === APP START ===
+2026-04-02 13:18:48 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:18:48 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:18:48 Log path: res://debug.log
+2026-04-02 13:23:06 === APP START ===
+2026-04-02 13:23:06 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:23:06 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:23:06 Log path: res://debug.log
+2026-04-02 13:26:24 === APP START ===
+2026-04-02 13:26:24 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:26:24 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:26:24 Log path: res://debug.log
+2026-04-02 13:35:29 === APP START ===
+2026-04-02 13:35:29 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:35:29 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:35:29 Log path: res://debug.log
+2026-04-02 13:38:33 === APP START ===
+2026-04-02 13:38:33 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:38:33 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:38:33 Log path: res://debug.log
+2026-04-02 13:42:50 === APP START ===
+2026-04-02 13:42:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:42:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:42:50 Log path: res://debug.log
+2026-04-02 13:45:11 === APP START ===
+2026-04-02 13:45:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:45:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:45:11 Log path: res://debug.log
+2026-04-02 13:52:56 === APP START ===
+2026-04-02 13:52:56 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 13:52:56 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 13:52:56 Log path: res://debug.log
+2026-04-02 14:00:00 === APP START ===
+2026-04-02 14:00:00 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 14:00:00 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 14:00:00 Log path: res://debug.log
+2026-04-02 14:06:31 === APP START ===
+2026-04-02 14:06:31 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 14:06:31 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 14:06:31 Log path: res://debug.log
+2026-04-02 14:07:49 === APP START ===
+2026-04-02 14:07:49 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 14:07:49 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 14:07:49 Log path: res://debug.log
+2026-04-02 16:23:11 === APP START ===
+2026-04-02 16:23:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 16:23:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 16:23:11 Log path: res://debug.log
+2026-04-02 16:33:37 === APP START ===
+2026-04-02 16:33:37 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 16:33:37 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 16:33:37 Log path: res://debug.log
+2026-04-02 16:43:31 === APP START ===
+2026-04-02 16:43:31 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 16:43:31 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 16:43:31 Log path: res://debug.log
+2026-04-02 16:50:13 === APP START ===
+2026-04-02 16:50:13 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 16:50:13 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 16:50:13 Log path: res://debug.log
+2026-04-02 16:50:42 === APP START ===
+2026-04-02 16:50:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 16:50:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 16:50:42 Log path: res://debug.log
+2026-04-02 16:55:38 === APP START ===
+2026-04-02 16:55:38 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 16:55:38 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 16:55:38 Log path: res://debug.log
+2026-04-02 17:05:43 === APP START ===
+2026-04-02 17:05:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 17:05:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 17:05:43 Log path: res://debug.log
+2026-04-02 17:06:23 === APP START ===
+2026-04-02 17:06:23 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 17:06:23 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 17:06:23 Log path: res://debug.log
+2026-04-02 17:15:11 === APP START ===
+2026-04-02 17:15:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 17:15:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 17:15:11 Log path: res://debug.log
+2026-04-02 19:16:50 === APP START ===
+2026-04-02 19:16:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:16:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:16:50 Log path: res://debug.log
+2026-04-02 19:21:50 === APP START ===
+2026-04-02 19:21:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:21:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:21:50 Log path: res://debug.log
+2026-04-02 19:32:39 === APP START ===
+2026-04-02 19:32:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:32:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:32:39 Log path: res://debug.log
+2026-04-02 19:35:42 === APP START ===
+2026-04-02 19:35:42 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:35:42 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:35:42 Log path: res://debug.log
+2026-04-02 19:42:06 === APP START ===
+2026-04-02 19:42:06 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:42:06 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:42:06 Log path: res://debug.log
+2026-04-02 19:42:18 === APP START ===
+2026-04-02 19:42:18 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:42:18 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:42:18 Log path: res://debug.log
+2026-04-02 19:46:36 === APP START ===
+2026-04-02 19:46:36 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:46:36 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:46:36 Log path: res://debug.log
+2026-04-02 19:50:35 === APP START ===
+2026-04-02 19:50:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:50:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:50:35 Log path: res://debug.log
+2026-04-02 19:54:16 === APP START ===
+2026-04-02 19:54:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:54:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:54:16 Log path: res://debug.log
+2026-04-02 19:55:11 === APP START ===
+2026-04-02 19:55:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:55:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:55:11 Log path: res://debug.log
+2026-04-02 19:56:24 === APP START ===
+2026-04-02 19:56:24 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:56:24 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:56:24 Log path: res://debug.log
+2026-04-02 19:57:18 === APP START ===
+2026-04-02 19:57:18 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:57:18 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:57:18 Log path: res://debug.log
+2026-04-02 19:59:02 === APP START ===
+2026-04-02 19:59:02 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 19:59:02 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 19:59:02 Log path: res://debug.log
+2026-04-02 20:02:43 === APP START ===
+2026-04-02 20:02:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 20:02:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 20:02:43 Log path: res://debug.log
+2026-04-02 20:13:00 === APP START ===
+2026-04-02 20:13:00 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 20:13:00 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 20:13:00 Log path: res://debug.log
+2026-04-02 20:16:10 === APP START ===
+2026-04-02 20:16:10 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 20:16:10 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 20:16:10 Log path: res://debug.log
+2026-04-02 20:16:38 === APP START ===
+2026-04-02 20:16:38 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 20:16:38 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 20:16:38 Log path: res://debug.log
+2026-04-02 20:21:58 === APP START ===
+2026-04-02 20:21:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 20:21:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 20:21:58 Log path: res://debug.log
+2026-04-02 20:56:35 === APP START ===
+2026-04-02 20:56:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 20:56:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 20:56:35 Log path: res://debug.log
+2026-04-02 21:03:11 === APP START ===
+2026-04-02 21:03:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 21:03:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 21:03:11 Log path: res://debug.log
+2026-04-02 21:12:59 === APP START ===
+2026-04-02 21:12:59 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 21:12:59 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 21:12:59 Log path: res://debug.log
+2026-04-02 21:33:53 === APP START ===
+2026-04-02 21:33:53 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 21:33:53 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 21:33:53 Log path: res://debug.log
+2026-04-02 21:34:31 === APP START ===
+2026-04-02 21:34:31 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 21:34:31 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 21:34:31 Log path: res://debug.log
+2026-04-02 21:34:51 === APP START ===
+2026-04-02 21:34:51 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 21:34:51 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 21:34:51 Log path: res://debug.log
+2026-04-02 21:54:53 === APP START ===
+2026-04-02 21:54:53 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 21:54:53 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 21:54:53 Log path: res://debug.log
+2026-04-02 22:07:21 === APP START ===
+2026-04-02 22:07:21 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 22:07:21 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 22:07:21 Log path: res://debug.log
+2026-04-02 22:45:52 === APP START ===
+2026-04-02 22:45:52 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 22:45:52 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 22:45:52 Log path: res://debug.log
+2026-04-02 22:52:26 === APP START ===
+2026-04-02 22:52:26 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 22:52:26 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 22:52:26 Log path: res://debug.log
+2026-04-02 22:59:41 === APP START ===
+2026-04-02 22:59:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 22:59:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 22:59:41 Log path: res://debug.log
+2026-04-02 23:18:57 === APP START ===
+2026-04-02 23:18:57 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:18:57 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:18:57 Log path: res://debug.log
+2026-04-02 23:24:39 === APP START ===
+2026-04-02 23:24:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:24:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:24:39 Log path: res://debug.log
+2026-04-02 23:29:45 === APP START ===
+2026-04-02 23:29:45 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:29:45 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:29:45 Log path: res://debug.log
+2026-04-02 23:39:49 === APP START ===
+2026-04-02 23:39:49 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:39:49 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:39:49 Log path: res://debug.log
+2026-04-02 23:42:43 === APP START ===
+2026-04-02 23:42:43 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:42:43 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:42:43 Log path: res://debug.log
+2026-04-02 23:47:32 === APP START ===
+2026-04-02 23:47:32 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:47:32 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:47:32 Log path: res://debug.log
+2026-04-02 23:47:50 === APP START ===
+2026-04-02 23:47:50 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:47:50 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:47:50 Log path: res://debug.log
+2026-04-02 23:55:37 === APP START ===
+2026-04-02 23:55:37 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:55:37 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:55:37 Log path: res://debug.log
+2026-04-02 23:57:11 === APP START ===
+2026-04-02 23:57:11 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-02 23:57:11 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-02 23:57:11 Log path: res://debug.log
+2026-04-03 00:09:49 === APP START ===
+2026-04-03 00:09:49 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 00:09:49 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 00:09:49 Log path: res://debug.log
+2026-04-03 10:39:10 === APP START ===
+2026-04-03 10:39:10 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 10:39:10 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 10:39:10 Log path: res://debug.log
+2026-04-03 11:19:26 === APP START ===
+2026-04-03 11:19:26 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:19:26 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:19:26 Log path: res://debug.log
+2026-04-03 11:22:18 === APP START ===
+2026-04-03 11:22:18 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:22:18 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:22:18 Log path: res://debug.log
+2026-04-03 11:24:07 === APP START ===
+2026-04-03 11:24:07 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:24:07 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:24:07 Log path: res://debug.log
+2026-04-03 11:26:15 === APP START ===
+2026-04-03 11:26:15 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:26:15 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:26:15 Log path: res://debug.log
+2026-04-03 11:28:57 === APP START ===
+2026-04-03 11:28:57 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:28:57 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:28:57 Log path: res://debug.log
+2026-04-03 11:31:39 === APP START ===
+2026-04-03 11:31:39 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:31:39 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:31:39 Log path: res://debug.log
+2026-04-03 11:34:34 === APP START ===
+2026-04-03 11:34:34 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:34:34 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:34:34 Log path: res://debug.log
+2026-04-03 11:42:27 === APP START ===
+2026-04-03 11:42:27 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:42:27 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:42:27 Log path: res://debug.log
+2026-04-03 11:44:05 === APP START ===
+2026-04-03 11:44:05 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 11:44:05 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 11:44:05 Log path: res://debug.log
+2026-04-03 12:00:34 === APP START ===
+2026-04-03 12:00:34 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:00:34 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:00:34 Log path: res://debug.log
+2026-04-03 12:03:36 === APP START ===
+2026-04-03 12:03:36 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:03:36 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:03:36 Log path: res://debug.log
+2026-04-03 12:03:53 === APP START ===
+2026-04-03 12:03:53 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:03:53 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:03:53 Log path: res://debug.log
+2026-04-03 12:04:25 === APP START ===
+2026-04-03 12:04:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:04:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:04:25 Log path: res://debug.log
+2026-04-03 12:12:07 === APP START ===
+2026-04-03 12:12:07 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:12:07 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:12:07 Log path: res://debug.log
+2026-04-03 12:16:47 === APP START ===
+2026-04-03 12:16:47 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:16:47 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:16:47 Log path: res://debug.log
+2026-04-03 12:21:14 === APP START ===
+2026-04-03 12:21:14 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:21:14 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:21:14 Log path: res://debug.log
+2026-04-03 12:25:59 === APP START ===
+2026-04-03 12:25:59 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:25:59 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:25:59 Log path: res://debug.log
+2026-04-03 12:30:06 === APP START ===
+2026-04-03 12:30:06 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:30:06 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:30:06 Log path: res://debug.log
+2026-04-03 12:30:52 === APP START ===
+2026-04-03 12:30:52 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:30:52 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:30:52 Log path: res://debug.log
+2026-04-03 12:31:58 === APP START ===
+2026-04-03 12:31:58 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:31:58 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:31:58 Log path: res://debug.log
+2026-04-03 12:32:16 === APP START ===
+2026-04-03 12:32:16 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:32:16 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:32:16 Log path: res://debug.log
+2026-04-03 12:34:05 === APP START ===
+2026-04-03 12:34:05 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:34:05 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:34:05 Log path: res://debug.log
+2026-04-03 12:47:47 === APP START ===
+2026-04-03 12:47:47 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:47:47 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:47:47 Log path: res://debug.log
+2026-04-03 12:56:09 === APP START ===
+2026-04-03 12:56:09 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 12:56:09 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 12:56:09 Log path: res://debug.log
+2026-04-03 13:00:33 === APP START ===
+2026-04-03 13:00:33 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 13:00:33 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 13:00:33 Log path: res://debug.log
+2026-04-03 13:06:29 === APP START ===
+2026-04-03 13:06:29 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 13:06:29 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 13:06:29 Log path: res://debug.log
+2026-04-03 13:08:56 === APP START ===
+2026-04-03 13:08:56 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 13:08:56 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 13:08:56 Log path: res://debug.log
+2026-04-03 13:15:41 === APP START ===
+2026-04-03 13:15:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 13:15:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 13:15:41 Log path: res://debug.log
+2026-04-03 13:29:05 === APP START ===
+2026-04-03 13:29:05 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 13:29:05 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 13:29:05 Log path: res://debug.log
+2026-04-03 13:33:07 === APP START ===
+2026-04-03 13:33:07 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 13:33:07 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 13:33:07 Log path: res://debug.log
+2026-04-03 13:37:35 === APP START ===
+2026-04-03 13:37:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 13:37:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 13:37:35 Log path: res://debug.log
+2026-04-03 13:41:25 === APP START ===
+2026-04-03 13:41:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 13:41:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 13:41:25 Log path: res://debug.log
+2026-04-03 14:05:12 === APP START ===
+2026-04-03 14:05:12 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:05:12 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:05:12 Log path: res://debug.log
+2026-04-03 14:05:22 === APP START ===
+2026-04-03 14:05:22 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:05:22 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:05:22 Log path: res://debug.log
+2026-04-03 14:07:35 === APP START ===
+2026-04-03 14:07:35 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:07:35 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:07:35 Log path: res://debug.log
+2026-04-03 14:09:25 === APP START ===
+2026-04-03 14:09:25 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:09:25 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:09:25 Log path: res://debug.log
+2026-04-03 14:18:31 === APP START ===
+2026-04-03 14:18:31 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:18:31 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:18:31 Log path: res://debug.log
+2026-04-03 14:25:41 === APP START ===
+2026-04-03 14:25:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:25:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:25:41 Log path: res://debug.log
+2026-04-03 14:30:46 === APP START ===
+2026-04-03 14:30:46 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:30:46 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:30:46 Log path: res://debug.log
+2026-04-03 14:35:09 === APP START ===
+2026-04-03 14:35:09 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:35:09 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:35:09 Log path: res://debug.log
+2026-04-03 14:37:15 === APP START ===
+2026-04-03 14:37:15 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:37:15 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:37:15 Log path: res://debug.log
+2026-04-03 14:40:41 === APP START ===
+2026-04-03 14:40:41 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:40:41 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:40:41 Log path: res://debug.log
+2026-04-03 14:41:18 === APP START ===
+2026-04-03 14:41:18 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:41:18 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:41:18 Log path: res://debug.log
+2026-04-03 14:42:40 === APP START ===
+2026-04-03 14:42:40 Executable: E:/Godot_v4.5.1-stable_win64/Godot_v4.5.1-stable_win64.exe
+2026-04-03 14:42:40 Base dir: E:/Godot_v4.5.1-stable_win64
+2026-04-03 14:42:40 Log path: res://debug.log
