@@ -1,0 +1,34 @@
+name: Pack Version Folder & Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 获取当前 tag 名称，例如 v2.6.0beta
+      - name: Get tag version
+        id: get_tag
+        run: echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      # 自动打包 version/版本号 文件夹
+      - name: Zip version folder
+        run: |
+          VERSION=${{ steps.get_tag.outputs.tag }}
+          zip -r "$VERSION.zip" "version/$VERSION/"
+
+      # 上传到 GitHub Release
+      - name: Create Release & Upload
+        uses: softprops/action-gh-release@v2
+        with:
+          files: '*.zip'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
