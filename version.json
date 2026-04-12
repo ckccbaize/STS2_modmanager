@@ -1,7 +1,7 @@
   {
-    "version": "v2.7.0",
+    "version": "v2.8.3",
     "download_url":
-  "https://github.com/ckccbaize/STS2_modmanager/releases/download/v2.7.0/sts2_modmanager_v2.7.0.zip",
-    "changelog": "正式版",
+  "https://github.com/ckccbaize/STS2_modmanager/releases/download/v2.8.3/sts2_modmanager_v2.8.3.zip",
+    "changelog": "新增整合包页面，修复大量bug，优化大量逻辑",
     "released_at": "2026-04-08"
   }
